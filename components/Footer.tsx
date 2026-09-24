@@ -43,6 +43,12 @@ export default function Footer() {
                 <Link href="/team">Our Team</Link>
               </li>
               <li>
+                <Link href="/online-therapy-illinois">Online Therapy</Link>
+              </li>
+              <li>
+                <Link href="/locations">Areas We Serve</Link>
+              </li>
+              <li>
                 <Link href="/supervision">Supervision</Link>
               </li>
               <li>

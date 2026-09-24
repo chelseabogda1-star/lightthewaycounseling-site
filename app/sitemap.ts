@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
 import { team } from "@/lib/team";
 import { getSpecialtySlugs, getAllPosts } from "@/lib/content";
+import { locations } from "@/lib/locations";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -11,6 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/about", priority: 0.8 },
     { url: "/services", priority: 0.9 },
     { url: "/team", priority: 0.9 },
+    { url: "/online-therapy-illinois", priority: 0.9 },
+    { url: "/locations", priority: 0.8 },
     { url: "/supervision", priority: 0.7 },
     { url: "/rates", priority: 0.7 },
     { url: "/blog", priority: 0.7 },
@@ -24,6 +27,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const specialties = getSpecialtySlugs().map((slug) => ({
     url: `${site.url}/services/${slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
+  const cityPages = locations.map((l) => ({
+    url: `${site.url}/locations/${l.slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.8,
@@ -43,5 +53,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...specialties, ...people, ...posts];
+  return [...staticPages, ...specialties, ...cityPages, ...people, ...posts];
 }

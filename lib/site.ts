@@ -30,8 +30,9 @@ export const nav = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Specialties" },
   { href: "/team", label: "Our Team" },
-  { href: "/supervision", label: "Supervision" },
-  { href: "/rates", label: "Rates & Insurance" },
+  { href: "/online-therapy-illinois", label: "Online Therapy" },
+  { href: "/locations", label: "Areas We Serve" },
+  { href: "/rates", label: "Rates" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];

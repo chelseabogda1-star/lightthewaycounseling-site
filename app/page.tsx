@@ -133,6 +133,52 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Where we work */}
+      <section className="section section--tight">
+        <div className="wrap">
+          <div className="split" style={{ alignItems: "center" }}>
+            <div>
+              <p className="eyebrow">Where we work</p>
+              <hr className="rule" />
+              <h2>Batavia in person, all of Illinois by video.</h2>
+              <p className="lede">
+                Our office sits in downtown Batavia, a short drive from Geneva,
+                St. Charles, Aurora, and North Aurora. Every clinician also sees
+                clients by secure video anywhere in the state &mdash; and our
+                weekday daytime openings are far easier to get than the evening
+                slots everyone asks for.
+              </p>
+              <div className="btn-row">
+                <Link className="btn btn--ghost" href="/online-therapy-illinois">
+                  Online therapy in Illinois
+                </Link>
+                <Link className="btn btn--ghost" href="/locations">
+                  Areas we serve
+                </Link>
+              </div>
+            </div>
+            <div>
+              <ul className="chips">
+                {[
+                  ["batavia", "Batavia"],
+                  ["geneva", "Geneva"],
+                  ["st-charles", "St. Charles"],
+                  ["aurora", "Aurora"],
+                  ["north-aurora", "North Aurora"],
+                  ["elburn-sugar-grove", "Elburn & Sugar Grove"],
+                ].map(([slug, label]) => (
+                  <li key={slug}>
+                    <Link className="chip" href={`/locations/${slug}`}>
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Team */}
       <section className="section">
         <div className="wrap">
