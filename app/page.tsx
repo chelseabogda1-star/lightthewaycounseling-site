@@ -21,39 +21,37 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <div className="hero__media">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={HERO_IMAGE} alt="" fetchPriority="high" />
-        </div>
-        <div className="hero__scrim" />
         <div className="wrap">
           <div className="hero__inner">
-            <p className="eyebrow" style={{ color: "#d8b784" }}>
-              Batavia, Illinois &middot; In person &amp; telehealth
-            </p>
-            <h1>You were never meant to do it alone.</h1>
-            <blockquote className="hero__quote">
-              &ldquo;We don&rsquo;t have to do it all alone. We were never meant
-              to.&rdquo;
-              <cite>Bren&eacute; Brown</cite>
-            </blockquote>
-            <p className="lede">
-              Individual counseling for children, adolescents, and adults. Our
-              clinicians walk alongside you &mdash; problem solving and processing
-              together &mdash; to help light the way to a more meaningful and
-              fulfilling life.
-            </p>
-            <div className="btn-row">
-              <Link className="btn btn--light" href="/contact">
-                Request an appointment
-              </Link>
-              <Link
-                className="btn btn--ghost"
-                style={{ color: "#fff", borderColor: "rgba(255,255,255,.35)" }}
-                href="/team"
-              >
-                Meet our clinicians
-              </Link>
+            <div>
+              <p className="eyebrow">
+                Batavia, Illinois &middot; In person &amp; telehealth
+              </p>
+              <h1>You were never meant to do it alone.</h1>
+              <blockquote className="hero__quote">
+                &ldquo;We don&rsquo;t have to do it all alone. We were never meant
+                to.&rdquo;
+                <cite>Bren&eacute; Brown</cite>
+              </blockquote>
+              <p className="lede">
+                Individual counseling for children, adolescents, and adults. Our
+                clinicians walk alongside you &mdash; problem solving and
+                processing together &mdash; to help light the way to a more
+                meaningful and fulfilling life.
+              </p>
+              <div className="btn-row">
+                <Link className="btn btn--primary" href="/contact">
+                  Request an appointment
+                </Link>
+                <Link className="btn btn--ghost" href="/team">
+                  Meet our clinicians
+                </Link>
+              </div>
+            </div>
+
+            <div className="hero__media">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={HERO_IMAGE} alt="" fetchPriority="high" />
             </div>
           </div>
         </div>

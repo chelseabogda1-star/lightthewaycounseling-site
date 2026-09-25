@@ -10,14 +10,12 @@ export default function Footer() {
       <div className="wrap">
         <div className="footer-grid">
           <div className="footer-brand">
-            <Link href="/" className="brand" style={{ color: "#fff", marginBottom: 14 }}>
-              <Logo />
-              <span className="brand__text">
-                <span className="brand__name">Light The Way</span>
-                <span className="brand__sub" style={{ color: "rgba(255,255,255,.5)" }}>
-                  Counseling, PLLC
-                </span>
-              </span>
+            <Link
+              href="/"
+              className="brand"
+              style={{ marginBottom: 18, display: "inline-block" }}
+            >
+              <Logo variant="light" height={54} />
             </Link>
             <p>
               Individual counseling for children, adolescents, and adults in Batavia,

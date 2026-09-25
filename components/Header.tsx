@@ -19,11 +19,7 @@ export default function Header() {
       <div className="wrap">
         <div className="header-bar">
           <Link href="/" className="brand" aria-label={`${site.shortName} home`}>
-            <Logo />
-            <span className="brand__text">
-              <span className="brand__name">Light The Way</span>
-              <span className="brand__sub">Counseling, PLLC</span>
-            </span>
+            <Logo height={46} />
           </Link>
 
           <button

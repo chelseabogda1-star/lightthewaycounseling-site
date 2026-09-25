@@ -17,14 +17,10 @@ export default function CTA({
         <h2>{heading}</h2>
         <p style={center ? { marginInline: "auto" } : undefined}>{body}</p>
         <div className="btn-row">
-          <Link className="btn btn--light" href="/contact">
+          <Link className="btn btn--primary" href="/contact">
             Request an appointment
           </Link>
-          <a
-            className="btn btn--ghost"
-            style={{ color: "#fff", borderColor: "rgba(255,255,255,.35)" }}
-            href={`tel:${site.phoneHref}`}
-          >
+          <a className="btn btn--ghost" href={`tel:${site.phoneHref}`}>
             Call {site.phone}
           </a>
         </div>
