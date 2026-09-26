@@ -11,9 +11,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-const HERO_IMAGE =
-  "https://static.wixstatic.com/media/7807b1_296004a17f4a43e3a9ec07b685bdba7c~mv2.jpg/v1/fill/w_1880,h_890,al_c,q_90,enc_auto/7807b1_296004a17f4a43e3a9ec07b685bdba7c~mv2.jpg";
-
 export default function Home() {
   const specialties = getAllSpecialties();
   const posts = getAllPosts().slice(0, 3);
@@ -21,37 +18,46 @@ export default function Home() {
   return (
     <>
       <section className="hero">
+        <div className="hero__wash" />
         <div className="wrap">
           <div className="hero__inner">
-            <div>
-              <p className="eyebrow">
-                Batavia, Illinois &middot; In person &amp; telehealth
-              </p>
-              <h1>You were never meant to do it alone.</h1>
-              <blockquote className="hero__quote">
-                &ldquo;We don&rsquo;t have to do it all alone. We were never meant
-                to.&rdquo;
-                <cite>Bren&eacute; Brown</cite>
-              </blockquote>
-              <p className="lede">
-                Individual counseling for children, adolescents, and adults. Our
-                clinicians walk alongside you &mdash; problem solving and
-                processing together &mdash; to help light the way to a more
-                meaningful and fulfilling life.
-              </p>
-              <div className="btn-row">
-                <Link className="btn btn--primary" href="/contact">
-                  Request an appointment
-                </Link>
-                <Link className="btn btn--ghost" href="/team">
-                  Meet our clinicians
-                </Link>
-              </div>
+            <p className="eyebrow">
+              Batavia, Illinois &middot; In person &amp; telehealth
+            </p>
+            <h1>You were never meant to do it alone.</h1>
+            <blockquote className="hero__quote">
+              &ldquo;We don&rsquo;t have to do it all alone. We were never meant
+              to.&rdquo;
+              <cite>Bren&eacute; Brown</cite>
+            </blockquote>
+            <p className="lede">
+              Individual counseling for children, adolescents, and adults. Our
+              clinicians walk alongside you &mdash; problem solving and
+              processing together &mdash; to help light the way to a more
+              meaningful and fulfilling life.
+            </p>
+            <div className="btn-row">
+              <Link className="btn btn--primary" href="/contact">
+                Request an appointment
+              </Link>
+              <Link className="btn btn--ghost" href="/team">
+                Meet our clinicians
+              </Link>
             </div>
 
-            <div className="hero__media">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={HERO_IMAGE} alt="" fetchPriority="high" />
+            <div className="hero__chips">
+              <div className="hero__chip">
+                <b>In person</b>
+                <span>Downtown Batavia</span>
+              </div>
+              <div className="hero__chip">
+                <b>Virtual</b>
+                <span>Anywhere in Illinois</span>
+              </div>
+              <div className="hero__chip">
+                <b>All ages</b>
+                <span>Children to adults</span>
+              </div>
             </div>
           </div>
         </div>

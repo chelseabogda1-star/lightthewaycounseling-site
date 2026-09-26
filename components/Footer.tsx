@@ -15,7 +15,7 @@ export default function Footer() {
               className="brand"
               style={{ marginBottom: 18, display: "inline-block" }}
             >
-              <Logo variant="light" height={54} />
+              <Logo height={52} />
             </Link>
             <p>
               Individual counseling for children, adolescents, and adults in Batavia,

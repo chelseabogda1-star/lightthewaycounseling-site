@@ -74,10 +74,10 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
           rel="stylesheet"
         />
-        <meta name="theme-color" content="#f8f2e6" />
+        <meta name="theme-color" content="#efeae2" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -87,9 +87,13 @@ export default function RootLayout({
         <a className="skip-link" href="#main">
           Skip to content
         </a>
-        <Header />
-        <main id="main">{children}</main>
-        <Footer />
+        <div className="shell">
+          <div className="page-card">
+            <Header />
+            <main id="main">{children}</main>
+          </div>
+          <Footer />
+        </div>
       </body>
     </html>
   );
