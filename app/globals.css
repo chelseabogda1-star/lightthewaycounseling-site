@@ -13,14 +13,17 @@
   --card-2: #faf6ef;
 
   /* Ink — warm, never black */
-  --ink: #2b2620;
-  --ink-2: #57514a;
-  --ink-3: #8b8379;
+  --ink: #241f1a;
+  --ink-2: #4c463f;
+  --ink-3: #7c746a;
 
   /* Brand — sampled from the logo */
   --blue: #889ab5;
-  --blue-deep: #4f6383;
-  --blue-wash: #e9eef5;
+  --blue-mid: #6d84a6;
+  --blue-deep: #47597a;
+  --blue-ink: #33425c;
+  --blue-wash: #e2eaf3;
+  --blue-tint: #cddbea;
 
   /* Warm counterpart */
   --blush: #e2c2b0;
@@ -164,7 +167,7 @@ p {
 }
 
 .section--mist {
-  background: linear-gradient(180deg, var(--blue-wash) 0%, var(--card) 100%);
+  background: linear-gradient(180deg, var(--blue-tint) 0%, var(--blue-wash) 100%);
 }
 
 .eyebrow {
@@ -173,21 +176,21 @@ p {
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--blue-deep);
+  color: var(--blue-ink);
   margin: 0 0 16px;
 }
 
 .lede {
   font-size: clamp(1.02rem, 1.7vw, 1.18rem);
-  font-weight: 300;
+  font-weight: 400;
   color: var(--ink-2);
   line-height: 1.75;
 }
 
 .rule {
   width: 46px;
-  height: 1px;
-  background: var(--blue);
+  height: 2px;
+  background: var(--blue-mid);
   border: 0;
   margin: 0 0 24px;
 }
@@ -237,11 +240,11 @@ p {
 }
 
 .btn--primary {
-  background: var(--ink);
+  background: var(--blue-ink);
   color: #fffdf9;
 }
 .btn--primary:hover {
-  background: var(--blue-deep);
+  background: var(--ink);
   color: #fffdf9;
 }
 
@@ -412,18 +415,18 @@ p {
   background:
     radial-gradient(
       46% 42% at 24% 30%,
-      rgba(136, 154, 181, 0.55) 0%,
-      rgba(136, 154, 181, 0) 68%
+      rgba(109, 132, 166, 0.78) 0%,
+      rgba(109, 132, 166, 0) 68%
     ),
     radial-gradient(
-      42% 38% at 74% 58%,
-      rgba(226, 194, 176, 0.6) 0%,
+      42% 38% at 76% 56%,
+      rgba(226, 194, 176, 0.62) 0%,
       rgba(226, 194, 176, 0) 66%
     ),
     radial-gradient(
-      38% 34% at 50% 92%,
-      rgba(197, 205, 220, 0.48) 0%,
-      rgba(197, 205, 220, 0) 70%
+      40% 36% at 52% 94%,
+      rgba(136, 154, 181, 0.66) 0%,
+      rgba(136, 154, 181, 0) 70%
     );
   filter: blur(18px);
 }
@@ -482,8 +485,8 @@ p {
 }
 
 .hero__chip {
-  background: rgba(255, 253, 249, 0.82);
-  border: 1px solid rgba(136, 154, 181, 0.28);
+  background: rgba(255, 253, 249, 0.88);
+  border: 1px solid rgba(109, 132, 166, 0.45);
   border-radius: var(--radius);
   padding: 15px 18px;
 }
@@ -521,12 +524,12 @@ p {
   background:
     radial-gradient(
       44% 46% at 62% 36%,
-      rgba(136, 154, 181, 0.38) 0%,
-      rgba(136, 154, 181, 0) 70%
+      rgba(109, 132, 166, 0.6) 0%,
+      rgba(109, 132, 166, 0) 70%
     ),
     radial-gradient(
       40% 40% at 88% 72%,
-      rgba(226, 194, 176, 0.42) 0%,
+      rgba(226, 194, 176, 0.5) 0%,
       rgba(226, 194, 176, 0) 70%
     );
   filter: blur(16px);
@@ -604,7 +607,7 @@ a.card:hover {
 .card p {
   color: var(--ink-2);
   font-size: 0.93rem;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -630,10 +633,10 @@ a.card:hover {
 .chip {
   display: inline-block;
   font-size: 0.82rem;
-  font-weight: 300;
+  font-weight: 400;
   padding: 8px 18px;
   border-radius: var(--radius-pill);
-  border: 1px solid var(--line-2);
+  border: 1px solid rgba(109, 132, 166, 0.35);
   background: var(--card);
   color: var(--ink-2);
   text-decoration: none;
@@ -646,8 +649,9 @@ a.chip:hover {
 }
 
 .chip--plain {
-  background: var(--blue-wash);
-  border-color: transparent;
+  background: var(--blue-deep);
+  border-color: var(--blue-deep);
+  color: #fffdf9;
 }
 
 .notice {
@@ -686,7 +690,8 @@ a.chip:hover {
   aspect-ratio: 5 / 6;
   overflow: hidden;
   border-radius: 140px 140px var(--radius) var(--radius);
-  background: linear-gradient(160deg, var(--blue-wash), var(--blush-wash));
+  background: linear-gradient(160deg, var(--blue-tint), var(--blush-wash));
+  box-shadow: inset 0 0 0 1px rgba(109, 132, 166, 0.35);
   margin-bottom: 16px;
 }
 
@@ -724,8 +729,8 @@ a.chip:hover {
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--blue-deep);
-  background: var(--blue-wash);
+  color: #fffdf9;
+  background: var(--blue-deep);
   padding: 4px 12px;
   border-radius: var(--radius-pill);
 }
@@ -791,7 +796,7 @@ a.chip:hover {
 
 .prose {
   font-size: 1.04rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--ink-2);
 }
 
@@ -824,7 +829,7 @@ a.chip:hover {
 }
 
 .prose li::marker {
-  color: var(--blue);
+  color: var(--blue-mid);
 }
 
 .prose strong {
@@ -835,7 +840,7 @@ a.chip:hover {
 .prose blockquote {
   margin: 1.7em 0;
   padding: 2px 0 2px 24px;
-  border-left: 1px solid var(--blue);
+  border-left: 3px solid var(--blue-mid);
   font-family: var(--display);
   font-style: italic;
   font-size: 1.16rem;
@@ -856,38 +861,66 @@ a.chip:hover {
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  border-top: 1px solid var(--line);
-  padding-block: clamp(56px, 8vw, 92px);
+  color: #f2f5f9;
+  background: linear-gradient(135deg, var(--blue-ink) 0%, var(--blue-deep) 100%);
+  padding-block: clamp(60px, 8vw, 96px);
 }
 
 .cta::before {
   content: "";
   position: absolute;
-  inset: -40%;
+  inset: -30%;
   z-index: -1;
   background:
     radial-gradient(
-      40% 44% at 22% 46%,
-      rgba(136, 154, 181, 0.4) 0%,
-      rgba(136, 154, 181, 0) 70%
+      38% 42% at 20% 34%,
+      rgba(226, 194, 176, 0.34) 0%,
+      rgba(226, 194, 176, 0) 70%
     ),
     radial-gradient(
-      38% 40% at 78% 54%,
-      rgba(226, 194, 176, 0.45) 0%,
-      rgba(226, 194, 176, 0) 70%
+      40% 44% at 82% 68%,
+      rgba(205, 219, 234, 0.4) 0%,
+      rgba(205, 219, 234, 0) 70%
     );
-  filter: blur(18px);
+  filter: blur(22px);
   pointer-events: none;
 }
 
+.cta .rule {
+  background: rgba(242, 245, 249, 0.55);
+}
+
 .cta h2 {
-  color: var(--ink);
+  color: #fffdf9;
+  font-weight: 300;
 }
 
 .cta p {
-  color: var(--ink-2);
-  font-weight: 300;
+  color: rgba(242, 245, 249, 0.84);
+  font-weight: 400;
   max-width: 54ch;
+}
+
+.cta .btn--primary {
+  background: #fffdf9;
+  color: var(--blue-ink);
+}
+
+.cta .btn--primary:hover {
+  background: var(--blue-wash);
+  color: var(--blue-ink);
+}
+
+.cta .btn--ghost {
+  color: #f2f5f9;
+  border-color: rgba(242, 245, 249, 0.45);
+  background: transparent;
+}
+
+.cta .btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(242, 245, 249, 0.8);
+  color: #fffdf9;
 }
 
 .cta.center p {
@@ -1000,7 +1033,7 @@ a.chip:hover {
 .post-item p {
   color: var(--ink-2);
   font-size: 0.96rem;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
   max-width: 68ch;
 }
@@ -1132,8 +1165,9 @@ a.chip:hover {
 }
 
 .stat {
-  background: rgba(255, 253, 249, 0.8);
-  border: 1px solid rgba(136, 154, 181, 0.26);
+  background: rgba(255, 253, 249, 0.85);
+  border: 1px solid rgba(109, 132, 166, 0.4);
+  border-left: 3px solid var(--blue-mid);
   border-radius: var(--radius);
   padding: 18px 20px;
 }
