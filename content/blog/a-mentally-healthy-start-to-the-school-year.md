@@ -6,7 +6,7 @@ author: "Light The Way Counseling"
 tags: ["Anxiety"]
 ---
 
-As the long, warm days of summer give way to the structure of a start to the new school year, students are filled with a blend of anticipation, excitement, and sometimes anxiety. This time of transition is more than just a return to academics—it's an opportunity to prioritize mental health as a cornerstone of overall well-being.
+As the long, warm days of summer give way to the structure of a start to the new school year, students are filled with a blend of anticipation, excitement, and sometimes anxiety. This time of transition is more than just a return to academics. It's an opportunity to prioritize mental health as a cornerstone of overall well-being.
 
 At Light The Way Counseling, we understand the importance of mental health in ensuring that students thrive both inside and outside the classroom. We are committed to offering resources and support to help families foster a mentally healthy return to school.
 

@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Areas We Serve",
   description:
-    "Light The Way Counseling serves Batavia, Geneva, St. Charles, Aurora, North Aurora, Elburn and Sugar Grove in person — and all of Illinois by telehealth.",
+    "Light The Way Counseling serves Batavia, Geneva, St. Charles, Aurora, North Aurora, Elburn and Sugar Grove in person, and all of Illinois by telehealth.",
   alternates: { canonical: "/locations" },
 };
 

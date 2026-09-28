@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Rates & Insurance",
   description:
-    "Fees, insurance, and payment information for Light The Way Counseling in Batavia, IL — including Good Faith Estimate and No Surprises Act information.",
+    "Fees, insurance, and payment information for Light The Way Counseling in Batavia, IL, including Good Faith Estimate and No Surprises Act information.",
   alternates: { canonical: "/rates" },
 };
 
@@ -32,7 +32,7 @@ export default function Rates() {
           <p>
             Fees vary by clinician, license level, and service type. Because rates
             change, we quote them directly rather than posting numbers that may be out
-            of date &mdash; call{" "}
+            of date. Call{" "}
             <a href={`tel:${site.phoneHref}`}>{site.phone}</a> or email{" "}
             <a href={`mailto:${site.email}`}>{site.email}</a> and we&rsquo;ll give you
             the current fee for the clinician you&rsquo;re interested in before you
@@ -48,7 +48,7 @@ export default function Rates() {
           </p>
           <p>
             If we are out of network with your plan, you may still have out-of-network
-            outpatient mental health benefits. We can provide a superbill &mdash; an
+            outpatient mental health benefits. We can provide a superbill, an
             itemized receipt you submit to your insurer for reimbursement.
           </p>
           <p>Questions worth asking your insurer before your first session:</p>
@@ -72,7 +72,7 @@ export default function Rates() {
             Your appointment time is held for you. We ask for at least 24 hours&rsquo;
             notice to cancel or reschedule; late cancellations and missed appointments
             may be charged the full session fee, which insurance does not cover. Life
-            happens &mdash; talk to your clinician if something comes up.
+            happens. Talk to your clinician if something comes up.
           </p>
 
           <h2>Good Faith Estimate</h2>
@@ -119,7 +119,7 @@ export default function Rates() {
 
       <CTA
         heading="Have a question about coverage?"
-        body="Send us your insurance carrier and we'll tell you which of our clinicians are in network — no obligation to schedule."
+        body="Send us your insurance carrier and we'll tell you which of our clinicians are in network. No obligation to schedule."
       />
     </>
   );

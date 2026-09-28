@@ -16,7 +16,7 @@ If you've been told there's a long wait, it's worth asking a different question:
 
 A practice has a handful of after-five slots per clinician per week, and effectively everyone wants them. Ask for 6pm on a Tuesday and you're in a queue. Ask for 11am on a Wednesday and you may be able to start next week.
 
-That difference — starting now versus starting in the spring — usually matters more than the inconvenience of the hour.
+That difference, starting now versus starting in the spring, usually matters more than the inconvenience of the hour.
 
 ## Telehealth changed what "fitting it in" means
 
@@ -43,7 +43,7 @@ Illinois clinicians can see clients located anywhere in the state, so a Batavia 
 
 ## If daytime genuinely isn't possible
 
-Some jobs don't bend — shift work, classrooms, floors you can't leave. In that case, get on the waitlist for the evening slot *and* ask whether the practice keeps a cancellation list. Late cancellations happen constantly, and people on the list often get seen much faster than the official wait suggests.
+Some jobs don't bend: shift work, classrooms, floors you can't leave. In that case, get on the waitlist for the evening slot *and* ask whether the practice keeps a cancellation list. Late cancellations happen constantly, and people on the list often get seen much faster than the official wait suggests.
 
 ## What we offer
 

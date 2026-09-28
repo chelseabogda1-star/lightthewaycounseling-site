@@ -81,7 +81,7 @@ export const team: Therapist[] = [
     ],
     approaches: ["Client-centered", "ACT", "CBT", "DBT"],
     bio: [
-      "I want to be honest — admitting that you or a loved one may need help can be scary! You've probably thought about reaching out for support many times before looking up your options on the internet and ending up here, reading my bio. I am proud of you for taking these first steps towards getting the help you need. However, you may still have some reservations about taking the next step and setting up an appointment, and that's okay! I hope that I can ease some of your concerns by sharing a little more about who I am and what I do.",
+      "I want to be honest. Admitting that you or a loved one may need help can be scary! You've probably thought about reaching out for support many times before looking up your options on the internet and ending up here, reading my bio. I am proud of you for taking these first steps towards getting the help you need. However, you may still have some reservations about taking the next step and setting up an appointment, and that's okay! I hope that I can ease some of your concerns by sharing a little more about who I am and what I do.",
       "Hello! My name is Heather Anderson, my pronouns are she/her, and I am a Licensed Clinical Professional Counselor. I have experience working with children, adolescents, and adults who are dealing with life transitions, stress, and symptoms of anxiety, depression, or neurodevelopmental disorders like ADHD and autism spectrum disorder. I utilize a client-centered counseling approach to foster a genuine and empathetic relationship with every client and incorporate other therapeutic approaches like ACT, CBT, and DBT depending on each client's goals for counseling.",
       "If you or a loved one is interested in learning more about me and my approach to counseling, or if you think I may be the right fit for your counseling needs and are ready to schedule an appointment, please reach out. As Fred Rogers, aka Mister Rogers, once said, “Discovering the truth about ourselves is a lifetime's work, but it's worth the effort.”",
     ],
@@ -126,10 +126,10 @@ export const team: Therapist[] = [
     ],
     approaches: ["CBT", "DBT", "Solution-Focused Therapy", "Play Therapy"],
     bio: [
-      "Imagine feeling less overwhelmed, more confident, and more in control — therapy can help you get there, and I'll guide you every step of the way. I'm a Licensed Social Worker with experience supporting children, adolescents, and adults facing anxiety, depression, grief, and major life changes, and I am also a Certified Grief Informed Professional (CGP), with additional training to support clients navigating loss.",
+      "Imagine feeling less overwhelmed, more confident, and more in control. Therapy can help you get there, and I'll guide you every step of the way. I'm a Licensed Social Worker with experience supporting children, adolescents, and adults facing anxiety, depression, grief, and major life changes, and I am also a Certified Grief Informed Professional (CGP), with additional training to support clients navigating loss.",
       "My approach is laidback yet focused, blending real conversations with evidence-based practices like Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), Solution-Focused Therapy, and Play Therapy. I believe therapy works best when it feels genuine, comfortable, and tailored to you, not one-size-fits-all.",
       "I'm inspired by the words of Selena Quintanilla: “All I need to do is try and do the best that I can do.” I bring that mindset to every session, helping clients embrace progress over perfection and build resilience along the way.",
-      "If you're ready to take the first step toward feeling better, I invite you to reach out — we can figure it out together.",
+      "If you're ready to take the first step toward feeling better, I invite you to reach out. We can figure it out together.",
     ],
   },
   {

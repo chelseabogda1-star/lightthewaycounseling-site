@@ -26,7 +26,7 @@ export default function ContactForm() {
     ];
 
     const subject = encodeURIComponent(
-      `Appointment request — ${get("name") || "New inquiry"}`
+      `Appointment request: ${get("name") || "New inquiry"}`
     );
     const body = encodeURIComponent(lines.join("\n"));
     window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
@@ -72,7 +72,7 @@ export default function ContactForm() {
         <div className="field">
           <label htmlFor="clinician">Preferred clinician</label>
           <select id="clinician" name="clinician" defaultValue="">
-            <option value="">No preference — help me choose</option>
+            <option value="">No preference, help me choose</option>
             {team.map((t) => (
               <option key={t.slug} value={`${t.name}, ${t.credentials}`}>
                 {t.name}, {t.credentials}
@@ -105,15 +105,15 @@ export default function ContactForm() {
           id="message"
           name="message"
           required
-          placeholder="A sentence or two is plenty — no need to go into detail here."
+          placeholder="A sentence or two is plenty. No need to go into detail here."
         />
       </div>
 
       <p className="form-note">
         Please keep this message general. Information submitted through this form may
         not be fully secure, so avoid including sensitive clinical details unless you
-        are comfortable doing so. This form is not monitored for emergencies &mdash;
-        if you are in crisis, call or text <strong>988</strong>, or call 911.
+        are comfortable doing so. This form is not monitored for emergencies.
+        If you are in crisis, call or text <strong>988</strong>, or call 911.
       </p>
 
       <div>
@@ -125,7 +125,7 @@ export default function ContactForm() {
       {sent && (
         <div className="notice">
           <strong>Almost there.</strong> Your email program should have opened with
-          your message ready to send &mdash; press send there and we&rsquo;ll get it.
+          your message ready to send. Press send there and we&rsquo;ll get it.
           If nothing opened, email us directly at{" "}
           <a href={`mailto:${site.email}`}>{site.email}</a> or call{" "}
           <a href={`tel:${site.phoneHref}`}>{site.phone}</a>.

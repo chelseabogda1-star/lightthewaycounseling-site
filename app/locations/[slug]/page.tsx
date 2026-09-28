@@ -74,13 +74,13 @@ export default async function LocationPage({ params }: Params) {
               <ul>
                 {loc.focus.map((f) => (
                   <li key={f.slug}>
-                    <Link href={`/services/${f.slug}`}>{f.label}</Link> &mdash;{" "}
+                    <Link href={`/services/${f.slug}`}>{f.label}</Link>:{" "}
                     {f.note}
                   </li>
                 ))}
               </ul>
               <p>
-                That isn&rsquo;t everything &mdash; the{" "}
+                That isn&rsquo;t everything. The{" "}
                 <Link href="/services">full list of specialties</Link> runs to
                 twenty.
               </p>

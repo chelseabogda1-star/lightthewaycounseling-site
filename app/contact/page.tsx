@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact & Appointments",
   description:
-    "Request an appointment with Light The Way Counseling in Batavia, IL. Call (630) 326-9951 or send a message — in-person and telehealth counseling across Illinois.",
+    "Request an appointment with Light The Way Counseling in Batavia, IL. Call (630) 326-9951 or send a message. In-person and telehealth counseling across Illinois.",
   alternates: { canonical: "/contact" },
 };
 
@@ -21,7 +21,7 @@ export default function Contact() {
           <h1>Get in touch</h1>
           <p className="lede">
             Reaching out is often the hardest part. Tell us a little about what
-            you&rsquo;re looking for and we&rsquo;ll take it from there &mdash;
+            you&rsquo;re looking for and we&rsquo;ll take it from there,
             usually within one business day.
           </p>
         </div>

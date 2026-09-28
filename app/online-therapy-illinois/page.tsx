@@ -7,22 +7,22 @@ import { team } from "@/lib/team";
 export const metadata: Metadata = {
   title: "Online Therapy in Illinois",
   description:
-    "Virtual counseling anywhere in Illinois with a small, licensed practice — the same therapist every week, real daytime availability, and specialties including ADHD, anxiety, autism, grief, and OCD.",
+    "Virtual counseling anywhere in Illinois with a small, licensed practice: the same therapist every week, real daytime availability, and specialties including ADHD, anxiety, autism, grief, and OCD.",
   alternates: { canonical: "/online-therapy-illinois" },
 };
 
 const faqs = [
   {
     q: "Who can you see by video?",
-    a: "Anyone physically located in Illinois at the time of the session. Illinois licensure is tied to where the client is, not where the therapist is — so if you're in Chicago, Rockford, Champaign, or Carbondale, we can work together.",
+    a: "Anyone physically located in Illinois at the time of the session. Illinois licensure is tied to where the client is, not where the therapist is, so if you're in Chicago, Rockford, Champaign, or Carbondale, we can work together.",
   },
   {
     q: "Is online therapy actually as effective as in person?",
-    a: "For most of what we treat — anxiety, depression, ADHD, life transitions, grief — research finds virtual therapy performs comparably to in-person care. It's a weaker fit for young children in play therapy and for people in acute crisis, and we'll tell you directly if that's your situation.",
+    a: "For most of what we treat (anxiety, depression, ADHD, life transitions, grief), research finds virtual therapy performs comparably to in-person care. It's a weaker fit for young children in play therapy and for people in acute crisis, and we'll tell you directly if that's your situation.",
   },
   {
     q: "What do I need for a session?",
-    a: "A private-enough space, a device with a camera, and a reasonable internet connection. Headphones help. Plenty of our clients take sessions from a parked car on a lunch break — that's a completely normal therapy office in 2026.",
+    a: "A private-enough space, a device with a camera, and a reasonable internet connection. Headphones help. Plenty of our clients take sessions from a parked car on a lunch break. That's a completely normal therapy office in 2026.",
   },
   {
     q: "Do you have appointments that aren't in the evening?",
@@ -77,8 +77,8 @@ export default function OnlineTherapy() {
         <div className="wrap wrap-narrow prose">
           <h2>What makes this different from an app</h2>
           <p>
-            Subscription therapy services solved a real problem &mdash; access
-            &mdash; by creating a new one: churn. Clinicians rotate, sessions get
+            Subscription therapy services solved a real problem (access)
+            by creating a new one: churn. Clinicians rotate, sessions get
             compressed, and you retell your story to someone new every few
             months.
           </p>
@@ -99,8 +99,8 @@ export default function OnlineTherapy() {
           </p>
           <p>
             Telehealth is what makes those hours usable. A session with no
-            commute on either end is a 50-minute block, not a two-hour errand
-            &mdash; which fits inside a lunch hour, a work-from-home Wednesday, or
+            commute on either end is a 50-minute block, not a two-hour errand,
+            which fits inside a lunch hour, a work-from-home Wednesday, or
             the gap between school drop-off and a shift. If you&rsquo;ve been
             told there&rsquo;s a long wait somewhere, it&rsquo;s worth asking a
             different question: <em>what do you have during the day?</em>
@@ -120,7 +120,7 @@ export default function OnlineTherapy() {
           </p>
           <ul>
             <li>
-              <Link href="/services/adhd">ADHD</Link> in adults &mdash; including
+              <Link href="/services/adhd">ADHD</Link> in adults, including
               people diagnosed late, and the executive-function systems that
               never stuck
             </li>
@@ -129,8 +129,8 @@ export default function OnlineTherapy() {
               <Link href="/services/depression">depression</Link>
             </li>
             <li>
-              <Link href="/services/life-transitions">Life transitions</Link>{" "}
-              &mdash; new roles, moves, separations, launching
+              <Link href="/services/life-transitions">Life transitions</Link>:{" "}
+              new roles, moves, separations, launching
             </li>
             <li>
               <Link href="/services/grief">Grief and loss</Link>
@@ -146,12 +146,12 @@ export default function OnlineTherapy() {
             <li>
               <Link href="/services/therapy-for-therapists">
                 Therapy for therapists
-              </Link>{" "}
-              &mdash; clinicians often prefer a practice outside their own
+              </Link>:{" "}
+              clinicians often prefer a practice outside their own
               professional circle, and distance helps
             </li>
             <li>
-              <Link href="/services/chronic-pain">Chronic pain</Link> &mdash;
+              <Link href="/services/chronic-pain">Chronic pain</Link>:{" "}
               where getting to an office is itself part of the problem
             </li>
           </ul>
@@ -178,7 +178,7 @@ export default function OnlineTherapy() {
               download.
             </li>
             <li>
-              First session is mostly getting to know you &mdash;{" "}
+              First session is mostly getting to know you.{" "}
               <Link href="/blog/what-to-expect-at-your-first-therapy-session">
                 here&rsquo;s what that actually looks like
               </Link>

@@ -1,6 +1,6 @@
 ---
 title: "Sports Performance"
-blurb: "Mental skills for athletes — focus, pressure, and confidence."
+blurb: "Mental skills for athletes: focus, pressure, and confidence."
 therapists: ["john-kuzelka"]
 ---
 Source: https://www.lightthewaycounselingpllc.com/sportsperformance

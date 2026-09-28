@@ -22,7 +22,7 @@ export default function Blog() {
           </p>
           <h1>Reading room</h1>
           <p className="lede">
-            Short, practical pieces from our clinicians &mdash; the kinds of things we
+            Short, practical pieces from our clinicians: the kinds of things we
             find ourselves explaining in session, written down so you can read them at
             2am if that&rsquo;s when you need them.
           </p>

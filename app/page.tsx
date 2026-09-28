@@ -63,7 +63,7 @@ export default function Home() {
           <div className="hero__below" data-reveal data-reveal-delay="120">
             <p className="lede">
               Individual counseling for children, adolescents, and adults in
-              downtown Batavia &mdash; and anywhere in Illinois by secure video.
+              downtown Batavia, and anywhere in Illinois by secure video.
             </p>
             <div className="btn-row">
               <Link className="btn btn--primary" href="/contact">
@@ -104,7 +104,7 @@ export default function Home() {
                 At Light the Way Counseling, you will never feel like you are doing
                 it all alone. Our team of clinicians is trained to provide counseling
                 services for children, adults, and adolescents experiencing a variety
-                of difficulties &mdash; including anxiety disorders, ADHD, autism
+                of difficulties, including anxiety disorders, ADHD, autism
                 spectrum disorder, mood disorders, life transitions, and relationship
                 difficulties.
               </p>
@@ -177,7 +177,7 @@ export default function Home() {
               <p className="lede">
                 Our office sits in downtown Batavia, a short drive from Geneva,
                 St. Charles, Aurora, and North Aurora. Every clinician also sees
-                clients by secure video anywhere in the state &mdash; and our
+                clients by secure video anywhere in the state, and our
                 weekday daytime openings are far easier to get than the evening
                 slots everyone asks for.
               </p>
@@ -220,7 +220,7 @@ export default function Home() {
           <h2>The people you&rsquo;ll be working with</h2>
           <p className="lede" style={{ maxWidth: "60ch", marginBottom: 34 }}>
             Fit matters more than almost anything else in therapy. Read a little about
-            each clinician before you reach out &mdash; or tell us what you&rsquo;re
+            each clinician before you reach out, or tell us what you&rsquo;re
             looking for and we&rsquo;ll help you choose.
           </p>
           <div className="team-grid" data-reveal>

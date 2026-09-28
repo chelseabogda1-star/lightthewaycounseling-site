@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!s) return {};
   return {
     title: `${s.title} Therapy in Batavia, IL`,
-    description: `${s.blurb} Counseling for ${s.title.toLowerCase()} at Light The Way Counseling in Batavia, Illinois — in person and by telehealth.`,
+    description: `${s.blurb} Counseling for ${s.title.toLowerCase()} at Light The Way Counseling in Batavia, Illinois, in person and by telehealth.`,
     alternates: { canonical: `/services/${slug}` },
   };
 }

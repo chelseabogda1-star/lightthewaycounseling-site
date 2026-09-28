@@ -19,7 +19,7 @@ export default function Footer() {
             </Link>
             <p>
               Individual counseling for children, adolescents, and adults in Batavia,
-              Illinois &mdash; in person and by telehealth across Illinois.
+              Illinois. In person and by telehealth across Illinois.
             </p>
             <div className="crisis">
               <strong>In crisis?</strong> Call or text <strong>988</strong> for the

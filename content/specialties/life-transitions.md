@@ -1,6 +1,6 @@
 ---
 title: "Life Transitions"
-blurb: "Support through change — new roles, moves, endings, and beginnings."
+blurb: "Support through change: new roles, moves, endings, and beginnings."
 therapists: ["chelsea-bogda", "heather-anderson", "stephanie-martinez", "caitlin-reisel", "john-kuzelka"]
 ---
 ## What are Life Transitions?

@@ -15,7 +15,7 @@ When emotions take over, you might:
 - Numb out or avoid emotions altogether
 - Notice relationships becoming tense or conflict-driven
 
-If this sounds familiar, you're not alone—and support can make a difference.
+If this sounds familiar, you're not alone, and support can make a difference.
 
 ## How Therapy Can Help
 

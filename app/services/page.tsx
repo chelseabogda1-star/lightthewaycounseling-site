@@ -6,7 +6,7 @@ import { getAllSpecialties } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Specialties & Services",
   description:
-    "Counseling for ADHD, anxiety, autism, depression, grief, OCD, PTSD, self-esteem, life transitions and more — for children, adolescents, and adults in Batavia, IL.",
+    "Counseling for ADHD, anxiety, autism, depression, grief, OCD, PTSD, self-esteem, life transitions and more, for children, adolescents, and adults in Batavia, IL.",
   alternates: { canonical: "/services" },
 };
 
@@ -44,7 +44,7 @@ export default function Services() {
           <div className="notice" style={{ marginTop: 40 }}>
             <strong>Don&rsquo;t see what you&rsquo;re looking for?</strong> This list
             isn&rsquo;t exhaustive. Call the office or send a note and we&rsquo;ll
-            tell you honestly whether we&rsquo;re the right fit &mdash; and if we
+            tell you honestly whether we&rsquo;re the right fit, and if we
             aren&rsquo;t, we&rsquo;ll try to point you somewhere that is.
           </div>
         </div>

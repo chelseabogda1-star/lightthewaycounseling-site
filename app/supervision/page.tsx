@@ -34,7 +34,7 @@ export default function Supervision() {
             If you are an LPC or LSW accruing hours toward the LCPC or LCSW, we provide
             structured clinical supervision that meets Illinois Department of Financial
             and Professional Regulation requirements. Supervision here is not a box to
-            check &mdash; it is dedicated time to think carefully about your cases,
+            check. It is dedicated time to think carefully about your cases,
             your clinical reasoning, and the clinician you are becoming.
           </p>
           <p>Supervision typically includes:</p>
@@ -46,7 +46,7 @@ export default function Supervision() {
             </li>
             <li>Ethics, boundaries, and scope-of-practice consultation</li>
             <li>
-              Attention to your own sustainability &mdash; caseload, countertransference,
+              Attention to your own sustainability: caseload, countertransference,
               and burnout
             </li>
             <li>Documentation of hours for your licensure application</li>
@@ -57,7 +57,7 @@ export default function Supervision() {
             We host master&rsquo;s-level counseling and social work students for
             practicum and internship placements. Students carry a supervised caseload,
             sit in on case consultation, and get real exposure to the day-to-day
-            reality of running a clinical practice &mdash; intake, documentation,
+            reality of running a clinical practice: intake, documentation,
             coordination of care, and the parts of the work that graduate programs
             rarely cover.
           </p>
@@ -80,7 +80,7 @@ export default function Supervision() {
           <p>
             Supervision is not therapy. If what you need is your own confidential
             clinical work, several of our clinicians see mental health professionals as
-            clients &mdash; see{" "}
+            clients. See{" "}
             <Link href="/services/therapy-for-therapists">
               therapy for therapists
             </Link>

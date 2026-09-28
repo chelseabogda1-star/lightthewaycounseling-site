@@ -1,5 +1,5 @@
 /* ============================================================
-   Light The Way Counseling — Direction 08
+   Light The Way Counseling: Direction 08
    Warm cream ground, the logo's blue throughout, warm brown ink.
    Serif headlines at normal weight. One handwritten word.
    No navy, no black, nothing bold.
@@ -14,12 +14,12 @@
   --card-2: #f6f3ea;
   --sand: #e7e1d5;
 
-  /* Ink — warm brown-olive, never black */
+  /* Ink: warm brown-olive, never black */
   --ink: #4a443a;
   --ink-2: #6b6458;
   --ink-3: #8d8578;
 
-  /* Brand — sampled from the logo */
+  /* Brand: sampled from the logo */
   --blue: #889ab5;
   --blue-mid: #6d84a6;
   --blue-deep: #5b7194;
@@ -138,7 +138,7 @@ p {
 }
 
 /* ============================================================
-   Shell — full bleed, no floating card
+   Shell: full bleed, no floating card
    ============================================================ */
 
 .shell {
@@ -244,7 +244,7 @@ p {
 }
 
 /* ============================================================
-   Buttons — small radius, never shouty
+   Buttons: small radius, never shouty
    ============================================================ */
 
 .btn {
@@ -460,7 +460,7 @@ p {
 }
 
 /* ============================================================
-   Hero — leaf photo with the headline inside it
+   Hero: photo with the headline set inside it
    ============================================================ */
 
 .hero {
@@ -745,7 +745,7 @@ a.card:hover {
   padding-bottom: 2px;
 }
 
-/* An index, not a row of pills — ruled columns, set in the display face. */
+/* An index, not a row of pills: ruled columns, set in the display face. */
 .chips {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -799,7 +799,7 @@ a.chip:hover::after {
   transform: none;
 }
 
-/* Not a link — a plain entry in the same index. */
+/* Not a link, just a plain entry in the same index. */
 .chip--plain {
   font-weight: 400;
   color: var(--ink-2);
@@ -1001,7 +1001,7 @@ a.chip:hover::after {
 }
 
 /* ============================================================
-   CTA band — deep warm olive with the mark behind it
+   CTA band: deep blue, with the mark and a photo behind it
    ============================================================ */
 
 .cta {
@@ -1334,7 +1334,7 @@ a.chip:hover::after {
 }
 
 /* ============================================================
-   Effects — reveal on scroll, cursor tilt.
+   Effects: reveal on scroll, cursor tilt.
    Everything here is gated on the .fx class, which Effects.tsx
    only adds when the visitor hasn't asked for reduced motion.
    Without JS (or with reduced motion) the page renders static.

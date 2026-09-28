@@ -5,8 +5,8 @@ import { useEffect } from "react";
 /**
  * Page effects, all opt-in via data attributes and all no-ops when the
  * visitor prefers reduced motion:
- *   data-reveal  — fades and lifts into place the first time it enters view
- *   data-tilt    — drifts a few pixels toward the cursor (pointer devices only)
+ *   data-reveal  = fades and lifts into place the first time it enters view
+ *   data-tilt    = drifts a few pixels toward the cursor (pointer devices only)
  */
 export default function Effects() {
   useEffect(() => {
@@ -37,7 +37,7 @@ export default function Effects() {
     );
 
     targets.forEach((el) => {
-      // Anything already on screen at load shows immediately — no flash.
+      // Anything already on screen at load shows immediately, with no flash.
       if (el.getBoundingClientRect().top < window.innerHeight * 0.9) {
         el.setAttribute("data-shown", "true");
       } else {
@@ -46,7 +46,7 @@ export default function Effects() {
     });
 
     // Safety net. Content must never be stuck invisible because an observer
-    // didn't fire — in a headless browser, a background tab, a print view, or
+    // didn't fire: in a headless browser, a background tab, a print view, or
     // anything else unexpected. After this, everything shows regardless.
     const failsafe = window.setTimeout(() => {
       targets.forEach((el) => el.setAttribute("data-shown", "true"));

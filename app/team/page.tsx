@@ -6,7 +6,7 @@ import { team } from "@/lib/team";
 export const metadata: Metadata = {
   title: "Meet Our Team",
   description:
-    "Get to know the counselors and social workers at Light The Way Counseling in Batavia, IL — their credentials, specialties, and approach to therapy.",
+    "Get to know the counselors and social workers at Light The Way Counseling in Batavia, IL: their credentials, specialties, and approach to therapy.",
   alternates: { canonical: "/team" },
 };
 

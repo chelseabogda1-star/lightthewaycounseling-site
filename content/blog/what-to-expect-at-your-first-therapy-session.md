@@ -1,6 +1,6 @@
 ---
 title: "What Actually Happens at a First Therapy Session?"
-description: "A plain description of what a first therapy appointment involves — paperwork, what you'll be asked, what you don't have to share, and how to tell if it's a fit."
+description: "A plain description of what a first therapy appointment involves: paperwork, what you'll be asked, what you don't have to share, and how to tell if it's a fit."
 date: "2026-09-08"
 author: "Light The Way Counseling"
 tags: ["Coping Skills"]
@@ -12,7 +12,7 @@ One of the most common reasons people put off making the call is that they have 
 
 You'll usually complete intake paperwork ahead of time: contact information, insurance, a health history, consent forms, and privacy notices. It is tedious, and it exists so your clinician doesn't spend your first appointment doing data entry.
 
-Somewhere in that packet you'll find a form about confidentiality. It's worth reading. Therapy is confidential, with a small set of legally required exceptions — mainly concerns about immediate danger to you or someone else, and suspected abuse of a child or a vulnerable adult. Your clinician will go over this with you directly at the start of the session.
+Somewhere in that packet you'll find a form about confidentiality. It's worth reading. Therapy is confidential, with a small set of legally required exceptions, mainly concerns about immediate danger to you or someone else, and suspected abuse of a child or a vulnerable adult. Your clinician will go over this with you directly at the start of the session.
 
 ## The first ten minutes
 
@@ -26,7 +26,7 @@ A first session is mostly information gathering. Expect questions about:
 
 - What's been going on recently, and how long it's been going on
 - Sleep, appetite, energy, concentration
-- Who's in your life — family, partners, friends, work or school
+- Who's in your life: family, partners, friends, work or school
 - Any previous therapy or medication, and how that went
 - What you're hoping is different six months from now
 
@@ -40,7 +40,7 @@ You also don't have to arrive with a goal. Plenty of people start therapy becaus
 
 ## How it ends
 
-Toward the end, your clinician will usually offer some initial thoughts — what they're noticing, how they'd approach the work, and what a reasonable next step looks like. You'll talk about frequency. Weekly is the most common starting point, because momentum matters early on; some people move to every other week later.
+Toward the end, your clinician will usually offer some initial thoughts: what they're noticing, how they'd approach the work, and what a reasonable next step looks like. You'll talk about frequency. Weekly is the most common starting point, because momentum matters early on; some people move to every other week later.
 
 ## How to tell whether it's a fit
 
@@ -53,7 +53,7 @@ After a session or two, it's reasonable to ask yourself:
 - Could I imagine telling this person something embarrassing?
 - Did I leave feeling slightly lighter, or at least clearer?
 
-A first session can feel awkward and still be a good fit — awkwardness is mostly a function of talking to a stranger about hard things. But if after three or four sessions you're consistently feeling unseen, say so. Clinicians would genuinely rather help you find a better match than have you quietly stop coming.
+A first session can feel awkward and still be a good fit. Awkwardness is mostly a function of talking to a stranger about hard things. But if after three or four sessions you're consistently feeling unseen, say so. Clinicians would genuinely rather help you find a better match than have you quietly stop coming.
 
 ## If you're bringing a child or teen
 
@@ -63,4 +63,4 @@ For younger clients, the first appointment often includes parents for part or al
 
 If you're in the Fox Valley and considering starting, you don't have to commit to a course of therapy to make an appointment. You're allowed to come once, see how it feels, and decide from there.
 
-[Reach out to our office](/contact) and tell us briefly what's going on — we'll help you figure out which clinician on our team is the right place to start.
+[Reach out to our office](/contact) and tell us briefly what's going on, and we'll help you figure out which clinician on our team is the right place to start.

@@ -11,7 +11,7 @@ export type Location = {
   faqs: { q: string; a: string }[];
 };
 
-// Each page is written to stand on its own — Google penalizes near-duplicate
+// Each page is written to stand on its own. Google penalizes near-duplicate
 // "doorway" location pages. If you add a city, give it genuinely different copy.
 export const locations: Location[] = [
   {
@@ -20,13 +20,13 @@ export const locations: Location[] = [
     title: "Counseling in Batavia, Illinois",
     metaTitle: "Therapist in Batavia, IL | Light The Way Counseling",
     metaDescription:
-      "Counseling for children, teens, and adults in downtown Batavia, IL. ADHD, anxiety, autism, depression, grief, and life transitions — in person or by telehealth.",
+      "Counseling for children, teens, and adults in downtown Batavia, IL. ADHD, anxiety, autism, depression, grief, and life transitions, in person or by telehealth.",
     lede: "Our office is in downtown Batavia, and most of the families we see live within a few miles of it.",
     gettingHere:
       "We're on South Shumway Avenue, a block off the river and a short walk from the shops on Wilson Street. There's street parking and a lot nearby, so you're rarely circling. If you're coming from Route 31 or Route 25, it's a couple of turns off either.",
     localContext: [
       "We see a steady number of Batavia students, and we're used to coordinating with school teams on 504 plans, IEPs, and school-avoidance plans when a family wants us involved.",
-      "Because we're local, families often pair an in-person session for a child with telehealth sessions for a parent — same practice, no second commute.",
+      "Because we're local, families often pair an in-person session for a child with telehealth sessions for a parent. Same practice, no second commute.",
       "Evening slots in Batavia fill first. Daytime and late-morning appointments are usually available much sooner.",
     ],
     focus: [
@@ -39,7 +39,7 @@ export const locations: Location[] = [
     faqs: [
       {
         q: "Where exactly is your Batavia office?",
-        a: "30 S. Shumway Avenue, 1W, Batavia, IL 60510 — in downtown Batavia, just off Wilson Street.",
+        a: "30 S. Shumway Avenue, 1W, Batavia, IL 60510, in downtown Batavia, just off Wilson Street.",
       },
       {
         q: "How soon can I get an appointment in Batavia?",
@@ -57,19 +57,19 @@ export const locations: Location[] = [
     title: "Counseling for Geneva, Illinois",
     metaTitle: "Therapist Serving Geneva, IL | Light The Way Counseling",
     metaDescription:
-      "Counseling for Geneva, IL families — children, teens, and adults. ADHD, anxiety, autism, grief, and life transitions, in person in nearby Batavia or by telehealth.",
+      "Counseling for Geneva, IL families: children, teens, and adults. ADHD, anxiety, autism, grief, and life transitions, in person in nearby Batavia or by telehealth.",
     lede: "Geneva sits directly north of us, so the drive is short enough that a midday appointment doesn't eat your afternoon.",
     gettingHere:
-      "From Geneva, Route 31 or Route 25 brings you straight down the river into Batavia — a few minutes either way. Our office is on South Shumway Avenue with parking close by.",
+      "From Geneva, Route 31 or Route 25 brings you straight down the river into Batavia, a few minutes either way. Our office is on South Shumway Avenue with parking close by.",
     localContext: [
       "A good share of our caseload is Geneva students and their parents, so we're familiar with how the district handles accommodations and what a useful school meeting looks like.",
-      "Geneva families often come to us for ADHD and anxiety in high-achieving students — the kind of pressure that doesn't look like a problem from the outside until it does.",
+      "Geneva families often come to us for ADHD and anxiety in high-achieving students: the kind of pressure that doesn't look like a problem from the outside until it does.",
       "If the drive doesn't work on a given week, the same clinician can see you by secure video. Many clients alternate.",
     ],
     focus: [
       { slug: "adhd", label: "ADHD", note: "Including adults recognizing it in themselves after a child's diagnosis." },
       { slug: "anxiety", label: "Anxiety", note: "Test anxiety, social anxiety, and performance pressure." },
-      { slug: "executive-functioning", label: "Executive functioning", note: "Planning, starting, and finishing — for students and adults." },
+      { slug: "executive-functioning", label: "Executive functioning", note: "Planning, starting, and finishing, for students and adults." },
       { slug: "life-transitions", label: "Life transitions", note: "Moves, divorce, launching, and empty nest." },
       { slug: "lgbtq", label: "LGBTQ+", note: "Affirming work with teens and adults." },
     ],
@@ -94,14 +94,14 @@ export const locations: Location[] = [
     title: "Counseling for St. Charles, Illinois",
     metaTitle: "Therapist Serving St. Charles, IL | Light The Way Counseling",
     metaDescription:
-      "Counseling for St. Charles, IL — children, adolescents, and adults. ADHD, anxiety, depression, grief, OCD, and life transitions. In person nearby or by telehealth.",
+      "Counseling for St. Charles, IL: children, adolescents, and adults. ADHD, anxiety, depression, grief, OCD, and life transitions. In person nearby or by telehealth.",
     lede: "St. Charles has plenty of counseling options, so it's worth being clear about what we are: a small practice where you see the same clinician every week.",
     gettingHere:
       "It's a straight run south on Route 31 or Route 25 from St. Charles to our office in downtown Batavia, generally ten to fifteen minutes depending on where you start and the time of day.",
     localContext: [
       "People often come to us from St. Charles after a larger group practice rotated them between clinicians. Our team is six people; continuity is the point.",
       "We see a mix of adults working on anxiety, depression, and life transitions, and families navigating a child's ADHD or autism diagnosis.",
-      "If the commute only works some weeks, telehealth covers the rest — same therapist either way.",
+      "If the commute only works some weeks, telehealth covers the rest. Same therapist either way.",
     ],
     focus: [
       { slug: "depression", label: "Depression", note: "Low mood, loss of interest, and the flatness that comes with it." },
@@ -121,7 +121,7 @@ export const locations: Location[] = [
       },
       {
         q: "What ages do you work with?",
-        a: "Children, adolescents, and adults. Which clinician fits depends on the age and what you're working on — we'll help you sort that out when you call.",
+        a: "Children, adolescents, and adults. Which clinician fits depends on the age and what you're working on. We'll help you sort that out when you call.",
       },
     ],
   },
@@ -131,13 +131,13 @@ export const locations: Location[] = [
     title: "Counseling for Aurora, Illinois",
     metaTitle: "Therapist Serving Aurora, IL | Light The Way Counseling",
     metaDescription:
-      "Counseling for Aurora, IL residents — ADHD, anxiety, depression, trauma, anger, and behavioral difficulties for children, teens, and adults. In person or telehealth.",
-    lede: "Aurora is a short drive north, and for a lot of our Aurora clients the bigger obstacle isn't distance — it's finding an appointment that fits around work.",
+      "Counseling for Aurora, IL residents: ADHD, anxiety, depression, trauma, anger, and behavioral difficulties for children, teens, and adults. In person or telehealth.",
+    lede: "Aurora is a short drive north, and for a lot of our Aurora clients the bigger obstacle isn't distance. It's finding an appointment that fits around work.",
     gettingHere:
       "Randall Road or Route 31 north brings you to Batavia in roughly fifteen minutes from most of Aurora. Our office is downtown on South Shumway Avenue, with parking nearby.",
     localContext: [
       "We hold weekday daytime slots that tend to go unclaimed, which makes them realistic for shift workers and people who can step away midday.",
-      "Several of our clinicians work with children and adolescents on behavioral difficulties, anger, and school-related anxiety — often alongside parent coaching.",
+      "Several of our clinicians work with children and adolescents on behavioral difficulties, anger, and school-related anxiety, often alongside parent coaching.",
       "Telehealth means an Aurora client can keep the same therapist through a job change, a move, or a semester away at school, as long as they're in Illinois.",
     ],
     focus: [
@@ -168,12 +168,12 @@ export const locations: Location[] = [
     title: "Counseling for North Aurora, Illinois",
     metaTitle: "Therapist Serving North Aurora, IL | Light The Way Counseling",
     metaDescription:
-      "Counseling for North Aurora, IL — children, teens, and adults. ADHD, anxiety, autism, emotion regulation, and life transitions. Nearby Batavia office or telehealth.",
+      "Counseling for North Aurora, IL: children, teens, and adults. ADHD, anxiety, autism, emotion regulation, and life transitions. Nearby Batavia office or telehealth.",
     lede: "North Aurora is close enough that a session doesn't have to be a whole evening's plan.",
     gettingHere:
       "It's a few minutes north on Route 31 to our downtown Batavia office at 30 S. Shumway Avenue, 1W. Parking is on the street or in the nearby lot.",
     localContext: [
-      "Proximity makes a real difference for families bringing a child weekly — a short drive is the difference between a routine that holds and one that quietly stops.",
+      "Proximity makes a real difference for families bringing a child weekly. A short drive is the difference between a routine that holds and one that quietly stops.",
       "We see North Aurora clients across the range: young children in play therapy, teenagers working on anxiety and emotion regulation, and adults sorting through a transition.",
       "Same-clinician telehealth is there for weeks when a drive isn't possible.",
     ],
@@ -187,7 +187,7 @@ export const locations: Location[] = [
     faqs: [
       {
         q: "Is your office close to North Aurora?",
-        a: "Yes — a few minutes north on Route 31 to downtown Batavia.",
+        a: "Yes, a few minutes north on Route 31 to downtown Batavia.",
       },
       {
         q: "Do you work with young children?",
@@ -205,12 +205,12 @@ export const locations: Location[] = [
     title: "Counseling for Elburn & Sugar Grove, Illinois",
     metaTitle: "Therapist Serving Elburn & Sugar Grove, IL | Light The Way",
     metaDescription:
-      "Counseling for Elburn and Sugar Grove, IL. ADHD, anxiety, school refusal, grief, and life transitions for children, teens, and adults — telehealth or in-person in Batavia.",
+      "Counseling for Elburn and Sugar Grove, IL. ADHD, anxiety, school refusal, grief, and life transitions for children, teens, and adults, by telehealth or in person in Batavia.",
     lede: "Out here the practical question is usually the drive, which is exactly what telehealth solves.",
     gettingHere:
       "Route 38 or Route 56 east brings you toward Batavia, generally fifteen to twenty minutes. Plenty of Elburn and Sugar Grove clients do a first session in the office and then move to video.",
     localContext: [
-      "Families in the Kaneland area often ask about school refusal and anxiety around the school day — a graded-return plan works the same whether we meet in person or on video.",
+      "Families in the Kaneland area often ask about school refusal and anxiety around the school day. A graded-return plan works the same whether we meet in person or on video.",
       "For a parent working in town with a child in school, a midday video session is frequently the only slot that realistically holds week to week.",
       "We can coordinate with school staff when a family asks us to, regardless of how we're meeting.",
     ],
@@ -224,7 +224,7 @@ export const locations: Location[] = [
     faqs: [
       {
         q: "Is telehealth as effective as coming in?",
-        a: "For most of what we treat, research finds virtual therapy performs comparably to in-person. Some work — young children in play therapy especially — goes better in the room, and we'll say so if that's the case for you.",
+        a: "For most of what we treat, research finds virtual therapy performs comparably to in-person. Some work, young children in play therapy especially, goes better in the room, and we'll say so if that's the case for you.",
       },
       {
         q: "How far is the office?",

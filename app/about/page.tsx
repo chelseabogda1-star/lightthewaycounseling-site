@@ -7,7 +7,7 @@ import { team } from "@/lib/team";
 export const metadata: Metadata = {
   title: "About Our Practice",
   description:
-    "Light The Way Counseling is a Batavia, IL therapy practice providing individual counseling for children, adolescents, and adults — in person and by telehealth across Illinois.",
+    "Light The Way Counseling is a Batavia, IL therapy practice providing individual counseling for children, adolescents, and adults, in person and by telehealth across Illinois.",
   alternates: { canonical: "/about" },
 };
 
@@ -33,7 +33,7 @@ export default function About() {
           <p>
             Our mission at Light the Way Counseling is to provide counseling services
             that are tailored to the needs of each individual client. We believe in
-            walking alongside our clients &mdash; problem solving and processing
+            walking alongside our clients, problem solving and processing
             together. Our goal is to help light the way to a more meaningful and
             fulfilling life.
           </p>
@@ -62,7 +62,7 @@ export default function About() {
           <p>
             Most clients start with a first session focused on getting to know you and
             what you want to be different. From there, you and your clinician decide
-            together on the shape of the work &mdash; what to focus on, how often to
+            together on the shape of the work: what to focus on, how often to
             meet, and how you&rsquo;ll know it&rsquo;s helping.
           </p>
 
@@ -87,7 +87,7 @@ export default function About() {
           <p>
             {team.length} clinicians practice at Light The Way.{" "}
             <Link href="/team">Read their bios</Link> to find someone whose approach
-            sounds like a fit &mdash; or call the office and we&rsquo;ll help you
+            sounds like a fit, or call the office and we&rsquo;ll help you
             decide.
           </p>
         </div>
