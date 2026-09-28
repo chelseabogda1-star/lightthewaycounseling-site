@@ -15,8 +15,21 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header className="site-header" data-open={open ? "true" : "false"}>
-      <div className="wrap">
+    <>
+      <div className="utility">
+        <div className="wrap">
+          <div className="utility__bar">
+            <a href={`tel:${site.phoneHref}`}>{site.phone}</a>
+            <span>
+              {site.address.city}, {site.address.state} &amp; telehealth across Illinois
+            </span>
+            <a href={`mailto:${site.email}`}>Email us</a>
+          </div>
+        </div>
+      </div>
+
+      <header className="site-header" data-open={open ? "true" : "false"}>
+        <div className="wrap">
         <div className="header-bar">
           <Link href="/" className="brand" aria-label={`${site.shortName} home`}>
             <Logo height={46} />
@@ -45,12 +58,13 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
-            <a className="btn btn--primary header-cta" href={`tel:${site.phoneHref}`}>
-              {site.phone}
-            </a>
+            <Link className="btn btn--primary header-cta" href="/contact">
+              Request an Appointment
+            </Link>
           </nav>
         </div>
-      </div>
-    </header>
+        </div>
+      </header>
+    </>
   );
 }

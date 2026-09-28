@@ -19,47 +19,68 @@ export default function Home() {
     <>
       <section className="hero">
         <div className="hero__wash" />
+        <svg
+          className="hero__sweep"
+          viewBox="0 0 1200 300"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M0 210 C 300 50 560 270 1200 90"
+            fill="none"
+            stroke="#c9cfc2"
+            strokeWidth="1.5"
+          />
+          <path
+            d="M0 255 C 320 95 590 300 1200 140"
+            fill="none"
+            stroke="#c3cedd"
+            strokeWidth="1.5"
+          />
+        </svg>
+
         <div className="wrap">
-          <div className="hero__inner">
-            <p className="eyebrow">
+          <div className="hero__figure">
+            <p className="hero__eyebrow">
               Batavia, Illinois &middot; In person &amp; telehealth
             </p>
-            <h1>You were never meant to do it alone.</h1>
+            <div className="hero__words">
+              <h1>
+                You were never meant to do it{" "}
+                <span className="script">alone.</span>
+              </h1>
+            </div>
+          </div>
+
+          <div className="hero__below">
+            <p className="lede">
+              Individual counseling for children, adolescents, and adults in
+              downtown Batavia &mdash; and anywhere in Illinois by secure video.
+            </p>
+            <div className="btn-row">
+              <Link className="btn btn--primary" href="/contact">
+                Request an Appointment
+              </Link>
+              <Link className="btn btn--ghost" href="/team">
+                Meet Our Clinicians
+              </Link>
+            </div>
             <blockquote className="hero__quote">
               &ldquo;We don&rsquo;t have to do it all alone. We were never meant
               to.&rdquo;
               <cite>Bren&eacute; Brown</cite>
             </blockquote>
-            <p className="lede">
-              Individual counseling for children, adolescents, and adults. Our
-              clinicians walk alongside you &mdash; problem solving and
-              processing together &mdash; to help light the way to a more
-              meaningful and fulfilling life.
-            </p>
-            <div className="btn-row">
-              <Link className="btn btn--primary" href="/contact">
-                Request an appointment
-              </Link>
-              <Link className="btn btn--ghost" href="/team">
-                Meet our clinicians
-              </Link>
-            </div>
-
-            <div className="hero__chips">
-              <div className="hero__chip">
-                <b>In person</b>
-                <span>Downtown Batavia</span>
-              </div>
-              <div className="hero__chip">
-                <b>Virtual</b>
-                <span>Anywhere in Illinois</span>
-              </div>
-              <div className="hero__chip">
-                <b>All ages</b>
-                <span>Children to adults</span>
-              </div>
-            </div>
           </div>
+        </div>
+      </section>
+
+      <section className="band-sage">
+        <div className="wrap">
+          <h2>Welcome to your space</h2>
+          <p>
+            {team.length} clinicians &middot; one office in downtown Batavia
+            &middot; daytime openings that are easier to get than evenings
+          </p>
         </div>
       </section>
 

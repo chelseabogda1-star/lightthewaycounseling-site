@@ -12,6 +12,8 @@ export default function CTA({
 }) {
   return (
     <section className={center ? "cta center" : "cta"}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img className="cta__mark" src="/mark.png" alt="" aria-hidden="true" />
       <div className="wrap">
         <hr className="rule" />
         <h2>{heading}</h2>

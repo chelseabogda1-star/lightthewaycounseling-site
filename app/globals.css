@@ -1,48 +1,55 @@
 /* ============================================================
-   Light The Way Counseling — "Soft Focus"
-   One quiet card on a warm ground. Blurred washes of the logo's
-   blue and a blush warm-tone. Nothing sharp anywhere.
+   Light The Way Counseling — Direction 08
+   Warm cream ground, sage, the logo's blue, warm brown ink.
+   Serif headlines at normal weight. One handwritten word.
+   No navy, no black, nothing bold.
    ============================================================ */
 
 :root {
   color-scheme: light;
 
   /* Ground and paper */
-  --ground: #efeae2;
-  --card: #fffdf9;
-  --card-2: #faf6ef;
+  --ground: #fbfaf4;
+  --card: #ffffff;
+  --card-2: #f6f3ea;
+  --sand: #e7e1d5;
 
-  /* Ink — warm, never black */
-  --ink: #241f1a;
-  --ink-2: #4c463f;
-  --ink-3: #7c746a;
+  /* Ink — warm brown-olive, never black */
+  --ink: #4a443a;
+  --ink-2: #6b6458;
+  --ink-3: #8d8578;
 
   /* Brand — sampled from the logo */
   --blue: #889ab5;
   --blue-mid: #6d84a6;
-  --blue-deep: #47597a;
-  --blue-ink: #33425c;
-  --blue-wash: #e2eaf3;
-  --blue-tint: #cddbea;
+  --blue-deep: #5b7194;
+  --blue-wash: #eef2f7;
+  --blue-tint: #dbe3ee;
 
-  /* Warm counterpart */
-  --blush: #e2c2b0;
-  --blush-wash: #f8efe8;
+  /* Sage — the warm mid-neutral */
+  --sage: #9fa495;
+  --sage-deep: #878d7c;
+  --sage-wash: #eceee8;
 
-  --line: #ece4d8;
-  --line-2: #ddd2c2;
+  /* The dark band */
+  --dark: #5c5744;
+  --dark-2: #4d4938;
 
-  --radius-card: 28px;
-  --radius: 16px;
+  --line: #ece7dc;
+  --line-2: #ddd6c7;
+
+  --radius: 4px;
+  --radius-leaf: 4px 46px 4px 4px;
   --radius-pill: 999px;
 
-  --shadow-soft: 0 1px 2px rgba(80, 64, 44, 0.03),
-    0 14px 40px rgba(80, 64, 44, 0.07);
-  --shadow-lift: 0 2px 6px rgba(80, 64, 44, 0.05),
-    0 26px 60px rgba(80, 64, 44, 0.11);
+  --shadow-soft: 0 1px 2px rgba(74, 68, 58, 0.03),
+    0 14px 38px rgba(74, 68, 58, 0.07);
+  --shadow-lift: 0 2px 6px rgba(74, 68, 58, 0.05),
+    0 26px 56px rgba(74, 68, 58, 0.12);
 
-  --display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-  --body: "Jost", "Futura", "Avenir Next", "Century Gothic", system-ui, sans-serif;
+  --display: "Lora", Georgia, "Times New Roman", serif;
+  --body: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --script: "Caveat", "Segoe Script", cursive;
 
   --wrap: 1180px;
   --narrow: 720px;
@@ -64,9 +71,9 @@ body {
   background: var(--ground);
   color: var(--ink);
   font-family: var(--body);
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.72;
+  line-height: 1.78;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -78,7 +85,7 @@ img {
 
 a {
   color: var(--blue-deep);
-  text-decoration-color: rgba(136, 154, 181, 0.45);
+  text-decoration-color: rgba(136, 154, 181, 0.5);
   text-underline-offset: 3px;
 }
 
@@ -93,23 +100,28 @@ h4 {
   font-family: var(--display);
   font-weight: 400;
   color: var(--ink);
-  line-height: 1.14;
+  line-height: 1.2;
   letter-spacing: 0;
   margin: 0 0 0.5em;
   text-wrap: balance;
 }
 
 h1 {
-  font-size: clamp(2.3rem, 5.6vw, 3.7rem);
-  font-weight: 300;
+  font-size: clamp(2.1rem, 5vw, 3.35rem);
 }
 h2 {
-  font-size: clamp(1.7rem, 3.6vw, 2.5rem);
-  font-weight: 300;
+  font-size: clamp(1.6rem, 3.4vw, 2.35rem);
 }
 h3 {
-  font-size: clamp(1.2rem, 2.2vw, 1.45rem);
+  font-size: clamp(1.15rem, 2vw, 1.38rem);
   font-weight: 500;
+}
+
+.script {
+  font-family: var(--script);
+  font-weight: 600;
+  font-size: 1.32em;
+  line-height: 0.95;
 }
 
 p {
@@ -119,28 +131,23 @@ p {
 :focus-visible {
   outline: 2px solid var(--blue-deep);
   outline-offset: 3px;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 ::selection {
-  background: var(--blue-wash);
+  background: var(--blue-tint);
 }
 
 /* ============================================================
-   Shell — header, card, footer
+   Shell — full bleed, no floating card
    ============================================================ */
 
 .shell {
-  max-width: 1320px;
-  margin-inline: auto;
-  padding-inline: clamp(10px, 2vw, 24px);
-  padding-block: clamp(10px, 2vw, 22px);
+  width: 100%;
 }
 
 .page-card {
-  background: var(--card);
-  border-radius: var(--radius-card);
-  box-shadow: var(--shadow-soft);
+  background: transparent;
 }
 
 .wrap {
@@ -167,30 +174,50 @@ p {
 }
 
 .section--mist {
-  background: linear-gradient(180deg, var(--blue-tint) 0%, var(--blue-wash) 100%);
+  background: var(--sage-wash);
+}
+
+/* The full-width sage band */
+.band-sage {
+  background: var(--sage);
+  color: #fff;
+  text-align: center;
+  padding-block: clamp(34px, 5vw, 54px);
+}
+
+.band-sage h2,
+.band-sage h3 {
+  color: #fff;
+  margin: 0 0 6px;
+}
+
+.band-sage p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.95rem;
 }
 
 .eyebrow {
   font-family: var(--body);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--blue-ink);
+  color: var(--sage-deep);
   margin: 0 0 16px;
 }
 
 .lede {
-  font-size: clamp(1.02rem, 1.7vw, 1.18rem);
+  font-size: clamp(1rem, 1.6vw, 1.1rem);
   font-weight: 400;
   color: var(--ink-2);
-  line-height: 1.75;
+  line-height: 1.8;
 }
 
 .rule {
   width: 46px;
-  height: 2px;
-  background: var(--blue-mid);
+  height: 1px;
+  background: var(--blue);
   border: 0;
   margin: 0 0 24px;
 }
@@ -206,11 +233,11 @@ p {
   position: absolute;
   left: -9999px;
   top: 0;
-  background: var(--ink);
+  background: var(--dark);
   color: #fff;
   padding: 10px 16px;
   z-index: 200;
-  border-radius: 0 0 12px 0;
+  border-radius: 0 0 4px 0;
 }
 .skip-link:focus {
   left: 12px;
@@ -218,7 +245,7 @@ p {
 }
 
 /* ============================================================
-   Buttons — all pills
+   Buttons — small radius, never shouty
    ============================================================ */
 
 .btn {
@@ -227,31 +254,30 @@ p {
   justify-content: center;
   gap: 8px;
   font-family: var(--body);
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 500;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  padding: 14px 30px;
-  border-radius: var(--radius-pill);
-  border: 1px solid transparent;
+  letter-spacing: 0.03em;
+  padding: 13px 26px;
+  border-radius: var(--radius);
+  border: 1.5px solid transparent;
   text-decoration: none;
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .btn--primary {
-  background: var(--blue-ink);
-  color: #fffdf9;
+  background: var(--blue);
+  color: #fff;
 }
 .btn--primary:hover {
-  background: var(--ink);
-  color: #fffdf9;
+  background: var(--blue-deep);
+  color: #fff;
 }
 
 .btn--ghost {
   background: transparent;
-  color: var(--ink);
-  border-color: var(--line-2);
+  color: var(--blue-deep);
+  border-color: var(--blue-tint);
 }
 .btn--ghost:hover {
   border-color: var(--blue);
@@ -260,7 +286,7 @@ p {
 }
 
 .btn--light {
-  background: #fffdf9;
+  background: #fff;
   color: var(--ink);
 }
 .btn--light:hover {
@@ -272,20 +298,48 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 /* ============================================================
-   Header
+   Utility strip + header
    ============================================================ */
+
+.utility {
+  background: #b6ada1;
+  color: #fff;
+}
+
+.utility__bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 26px;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-block: 9px;
+}
+
+.utility a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.utility a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 .site-header {
   position: sticky;
   top: env(safe-area-inset-top, 0px);
   z-index: 100;
-  background: rgba(255, 253, 249, 0.9);
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: saturate(150%) blur(10px);
-  border-radius: var(--radius-card) var(--radius-card) 0 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -294,7 +348,7 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  min-height: 78px;
+  min-height: 76px;
 }
 
 .brand {
@@ -322,51 +376,48 @@ p {
 }
 
 .nav a {
-  font-size: 0.73rem;
+  font-size: 0.79rem;
   font-weight: 400;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   color: var(--ink-2);
   text-decoration: none;
-  padding: 9px 12px;
-  border-radius: var(--radius-pill);
+  padding: 9px 13px;
+  border-radius: var(--radius);
   white-space: nowrap;
 }
 
 .nav a:hover,
 .nav a[data-active="true"] {
   color: var(--ink);
-  background: var(--blue-wash);
+  background: var(--sage-wash);
 }
 
 .nav a.header-cta,
 .nav a.header-cta:hover {
-  font-size: 0.68rem;
+  font-size: 0.76rem;
   font-weight: 500;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  padding: 11px 22px;
-  margin-left: 10px;
-  color: #fffdf9;
-  background: var(--blue-deep);
+  letter-spacing: 0.02em;
+  text-transform: none;
+  padding: 11px 20px;
+  margin-left: 12px;
+  color: #fff;
+  background: var(--blue);
 }
 
 .nav a.header-cta:hover {
-  background: var(--ink);
+  background: var(--blue-deep);
 }
 
 .nav-toggle {
   display: none;
   background: none;
-  border: 1px solid var(--line-2);
-  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--line-2);
+  border-radius: var(--radius);
   padding: 10px 18px;
   cursor: pointer;
   font-family: var(--body);
-  font-size: 0.7rem;
+  font-size: 0.76rem;
   font-weight: 500;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
   color: var(--ink);
 }
 
@@ -388,7 +439,7 @@ p {
   }
   .site-header[data-open="true"] .nav a {
     padding: 13px 14px;
-    font-size: 0.8rem;
+    font-size: 0.88rem;
   }
   .site-header[data-open="true"] .nav a.header-cta {
     display: inline-flex;
@@ -398,109 +449,172 @@ p {
 }
 
 /* ============================================================
-   Hero — the wash
+   Hero — leaf photo with the headline inside it
    ============================================================ */
 
 .hero {
   position: relative;
   overflow: hidden;
   isolation: isolate;
+  padding-block: clamp(40px, 6vw, 68px) clamp(40px, 6vw, 72px);
 }
 
 .hero__wash {
   position: absolute;
-  inset: -22% -12% -12%;
+  inset: -20% -10%;
   z-index: -1;
   pointer-events: none;
   background:
     radial-gradient(
-      46% 42% at 24% 30%,
-      rgba(109, 132, 166, 0.78) 0%,
-      rgba(109, 132, 166, 0) 68%
+      52% 60% at 14% 22%,
+      rgba(159, 164, 149, 0.28) 0%,
+      rgba(159, 164, 149, 0) 70%
     ),
     radial-gradient(
-      42% 38% at 76% 56%,
-      rgba(226, 194, 176, 0.62) 0%,
-      rgba(226, 194, 176, 0) 66%
-    ),
-    radial-gradient(
-      40% 36% at 52% 94%,
-      rgba(136, 154, 181, 0.66) 0%,
+      50% 56% at 88% 76%,
+      rgba(136, 154, 181, 0.28) 0%,
       rgba(136, 154, 181, 0) 70%
     );
-  filter: blur(18px);
 }
 
-.hero__inner {
+.hero__sweep {
+  position: absolute;
+  left: -6%;
+  right: -6%;
+  top: 22%;
+  height: 300px;
+  z-index: -1;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.hero__figure {
   position: relative;
-  text-align: center;
-  max-width: 660px;
+  max-width: 880px;
   margin-inline: auto;
-  padding-block: clamp(68px, 11vw, 132px);
+  border-radius: 6px 180px 180px 180px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(150deg, #cfd7c9, #a9b9cd 55%, #cfc6b5);
+  box-shadow: 0 24px 52px rgba(74, 68, 58, 0.16);
 }
 
-.hero h1 {
-  max-width: 17ch;
-  margin-inline: auto;
-  margin-bottom: 0.4em;
+.hero__figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__figure::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      to top,
+      rgba(58, 53, 44, 0.68) 0%,
+      rgba(58, 53, 44, 0.26) 46%,
+      rgba(58, 53, 44, 0.04) 74%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(58, 53, 44, 0.34) 0%,
+      rgba(58, 53, 44, 0) 22%
+    );
+}
+
+.hero__eyebrow {
+  position: absolute;
+  top: clamp(16px, 3vw, 28px);
+  left: 0;
+  right: 0;
+  z-index: 2;
+  text-align: center;
+  font-size: 0.64rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0;
+}
+
+.hero__words {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: clamp(20px, 4vw, 44px);
+  text-align: center;
+  padding-inline: clamp(20px, 5vw, 60px);
+}
+
+.hero__words h1 {
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 2px 18px rgba(50, 45, 38, 0.45);
+}
+
+.hero__below {
+  text-align: center;
+  max-width: 620px;
+  margin: clamp(26px, 4vw, 40px) auto 0;
+}
+
+.hero__below .lede {
+  margin-bottom: 0;
+}
+
+.hero__below .btn-row {
+  justify-content: center;
 }
 
 .hero__quote {
   font-family: var(--display);
   font-style: italic;
-  font-weight: 300;
-  font-size: clamp(1.05rem, 1.8vw, 1.22rem);
-  color: var(--ink-2);
-  max-width: 34ch;
-  margin: 0 auto 26px;
+  font-weight: 400;
+  font-size: 1.02rem;
+  color: var(--ink-3);
+  max-width: 40ch;
+  margin: 22px auto 0;
+  line-height: 1.7;
 }
 
 .hero__quote cite {
   display: block;
   font-style: normal;
   font-family: var(--body);
-  font-size: 0.68rem;
+  font-size: 0.64rem;
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--ink-3);
-  margin-top: 12px;
-}
-
-.hero .lede {
-  max-width: 46ch;
-  margin-inline: auto;
-}
-
-.hero .btn-row {
-  justify-content: center;
+  margin-top: 10px;
 }
 
 .hero__chips {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 12px;
-  margin-top: 42px;
+  margin-top: 36px;
   text-align: left;
 }
 
 .hero__chip {
-  background: rgba(255, 253, 249, 0.88);
-  border: 1px solid rgba(109, 132, 166, 0.45);
+  background: #fff;
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 15px 18px;
 }
 
 .hero__chip b {
   display: block;
+  font-family: var(--display);
   font-weight: 500;
-  font-size: 0.92rem;
+  font-size: 0.98rem;
   color: var(--ink);
 }
 
 .hero__chip span {
   font-size: 0.8rem;
-  font-weight: 300;
   color: var(--ink-2);
 }
 
@@ -512,6 +626,7 @@ p {
   position: relative;
   overflow: hidden;
   isolation: isolate;
+  background: var(--card-2);
   border-bottom: 1px solid var(--line);
   padding-block: clamp(46px, 7vw, 82px);
 }
@@ -523,16 +638,15 @@ p {
   z-index: -1;
   background:
     radial-gradient(
-      44% 46% at 62% 36%,
-      rgba(109, 132, 166, 0.6) 0%,
-      rgba(109, 132, 166, 0) 70%
+      44% 48% at 66% 38%,
+      rgba(159, 164, 149, 0.3) 0%,
+      rgba(159, 164, 149, 0) 72%
     ),
     radial-gradient(
-      40% 40% at 88% 72%,
-      rgba(226, 194, 176, 0.5) 0%,
-      rgba(226, 194, 176, 0) 70%
+      42% 44% at 90% 74%,
+      rgba(136, 154, 181, 0.28) 0%,
+      rgba(136, 154, 181, 0) 72%
     );
-  filter: blur(16px);
   pointer-events: none;
 }
 
@@ -546,7 +660,7 @@ p {
 }
 
 .crumb {
-  font-size: 0.68rem;
+  font-size: 0.66rem;
   font-weight: 500;
   letter-spacing: 0.17em;
   text-transform: uppercase;
@@ -582,7 +696,7 @@ p {
 .card {
   background: var(--card);
   border: 1px solid var(--line);
-  border-radius: var(--radius);
+  border-radius: var(--radius-leaf);
   padding: 28px;
   transition: border-color 0.2s ease, transform 0.2s ease,
     box-shadow 0.2s ease;
@@ -595,7 +709,7 @@ a.card {
 }
 
 a.card:hover {
-  border-color: rgba(136, 154, 181, 0.55);
+  border-color: var(--blue-tint);
   transform: translateY(-3px);
   box-shadow: var(--shadow-soft);
 }
@@ -606,19 +720,18 @@ a.card:hover {
 
 .card p {
   color: var(--ink-2);
-  font-size: 0.93rem;
-  font-weight: 400;
+  font-size: 0.9rem;
   margin: 0;
 }
 
 .card__more {
   display: inline-block;
   margin-top: 16px;
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  font-size: 0.78rem;
+  font-weight: 400;
   color: var(--blue-deep);
+  border-bottom: 1px solid var(--blue);
+  padding-bottom: 2px;
 }
 
 .chips {
@@ -636,7 +749,7 @@ a.card:hover {
   font-weight: 400;
   padding: 8px 18px;
   border-radius: var(--radius-pill);
-  border: 1px solid rgba(109, 132, 166, 0.35);
+  border: 1px solid var(--line-2);
   background: var(--card);
   color: var(--ink-2);
   text-decoration: none;
@@ -649,18 +762,17 @@ a.chip:hover {
 }
 
 .chip--plain {
-  background: var(--blue-deep);
-  border-color: var(--blue-deep);
-  color: #fffdf9;
+  background: var(--sage);
+  border-color: var(--sage);
+  color: #fff;
 }
 
 .notice {
-  background: var(--blush-wash);
-  border: 1px solid rgba(226, 194, 176, 0.5);
+  background: var(--sage-wash);
+  border: 1px solid #dfe2da;
   border-radius: var(--radius);
   padding: 22px 24px;
-  font-size: 0.94rem;
-  font-weight: 300;
+  font-size: 0.92rem;
   color: var(--ink-2);
 }
 
@@ -689,9 +801,8 @@ a.chip:hover {
   position: relative;
   aspect-ratio: 5 / 6;
   overflow: hidden;
-  border-radius: 140px 140px var(--radius) var(--radius);
-  background: linear-gradient(160deg, var(--blue-tint), var(--blush-wash));
-  box-shadow: inset 0 0 0 1px rgba(109, 132, 166, 0.35);
+  border-radius: 6px 130px 130px 130px;
+  background: linear-gradient(160deg, #d3dacd, #bfcbdb);
   margin-bottom: 16px;
 }
 
@@ -708,7 +819,7 @@ a.chip:hover {
 
 .person__name {
   font-family: var(--display);
-  font-size: 1.22rem;
+  font-size: 1.2rem;
   font-weight: 500;
   margin: 0 0 3px;
 }
@@ -716,7 +827,7 @@ a.chip:hover {
 .person__creds {
   font-size: 0.72rem;
   font-weight: 400;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-3);
   margin: 0;
@@ -725,12 +836,12 @@ a.chip:hover {
 .person__role {
   display: inline-block;
   margin-top: 10px;
-  font-size: 0.65rem;
+  font-size: 0.64rem;
   font-weight: 500;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #fffdf9;
-  background: var(--blue-deep);
+  color: #fff;
+  background: var(--sage);
   padding: 4px 12px;
   border-radius: var(--radius-pill);
 }
@@ -753,10 +864,10 @@ a.chip:hover {
 }
 
 .bio__photo {
-  border-radius: 160px 160px var(--radius) var(--radius);
+  border-radius: 6px 150px 150px 150px;
   overflow: hidden;
   aspect-ratio: 5 / 6;
-  background: linear-gradient(160deg, var(--blue-wash), var(--blush-wash));
+  background: linear-gradient(160deg, #d3dacd, #bfcbdb);
   margin-bottom: 24px;
 }
 
@@ -776,13 +887,12 @@ a.chip:hover {
 .factlist li {
   padding: 14px 0;
   border-bottom: 1px solid var(--line);
-  font-size: 0.9rem;
-  font-weight: 300;
+  font-size: 0.88rem;
 }
 
 .factlist .k {
   display: block;
-  font-size: 0.65rem;
+  font-size: 0.64rem;
   font-weight: 500;
   letter-spacing: 0.17em;
   text-transform: uppercase;
@@ -795,8 +905,7 @@ a.chip:hover {
    ============================================================ */
 
 .prose {
-  font-size: 1.04rem;
-  font-weight: 400;
+  font-size: 1rem;
   color: var(--ink-2);
 }
 
@@ -805,14 +914,14 @@ a.chip:hover {
 }
 
 .prose h2 {
-  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
   color: var(--ink);
   margin-top: 1.9em;
   margin-bottom: 0.5em;
 }
 
 .prose h3 {
-  font-size: 1.18rem;
+  font-size: 1.15rem;
   color: var(--ink);
   margin-top: 1.7em;
   margin-bottom: 0.4em;
@@ -829,7 +938,7 @@ a.chip:hover {
 }
 
 .prose li::marker {
-  color: var(--blue-mid);
+  color: var(--sage);
 }
 
 .prose strong {
@@ -840,10 +949,10 @@ a.chip:hover {
 .prose blockquote {
   margin: 1.7em 0;
   padding: 2px 0 2px 24px;
-  border-left: 3px solid var(--blue-mid);
+  border-left: 2px solid var(--sage);
   font-family: var(--display);
   font-style: italic;
-  font-size: 1.16rem;
+  font-size: 1.12rem;
   color: var(--ink);
 }
 
@@ -854,73 +963,64 @@ a.chip:hover {
 }
 
 /* ============================================================
-   CTA band
+   CTA band — deep warm olive with the mark behind it
    ============================================================ */
 
 .cta {
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  color: #f2f5f9;
-  background: linear-gradient(135deg, var(--blue-ink) 0%, var(--blue-deep) 100%);
-  padding-block: clamp(60px, 8vw, 96px);
+  color: #f4f1e8;
+  background: var(--dark);
+  padding-block: clamp(56px, 8vw, 92px);
 }
 
-.cta::before {
-  content: "";
+.cta__mark {
   position: absolute;
-  inset: -30%;
+  right: clamp(-40px, -2vw, 0px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(240px, 30vw, 400px);
+  opacity: 0.08;
+  filter: brightness(0) invert(1);
   z-index: -1;
-  background:
-    radial-gradient(
-      38% 42% at 20% 34%,
-      rgba(226, 194, 176, 0.34) 0%,
-      rgba(226, 194, 176, 0) 70%
-    ),
-    radial-gradient(
-      40% 44% at 82% 68%,
-      rgba(205, 219, 234, 0.4) 0%,
-      rgba(205, 219, 234, 0) 70%
-    );
-  filter: blur(22px);
   pointer-events: none;
 }
 
 .cta .rule {
-  background: rgba(242, 245, 249, 0.55);
+  background: rgba(244, 241, 232, 0.5);
 }
 
 .cta h2 {
-  color: #fffdf9;
-  font-weight: 300;
+  color: #fff;
 }
 
 .cta p {
-  color: rgba(242, 245, 249, 0.84);
-  font-weight: 400;
+  color: rgba(244, 241, 232, 0.86);
   max-width: 54ch;
 }
 
 .cta .btn--primary {
-  background: #fffdf9;
-  color: var(--blue-ink);
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.75);
 }
 
 .cta .btn--primary:hover {
-  background: var(--blue-wash);
-  color: var(--blue-ink);
+  background: #fff;
+  color: var(--dark);
 }
 
 .cta .btn--ghost {
-  color: #f2f5f9;
-  border-color: rgba(242, 245, 249, 0.45);
+  color: rgba(244, 241, 232, 0.9);
+  border-color: rgba(244, 241, 232, 0.3);
   background: transparent;
 }
 
 .cta .btn--ghost:hover {
-  background: rgba(255, 255, 255, 0.14);
-  border-color: rgba(242, 245, 249, 0.8);
-  color: #fffdf9;
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(244, 241, 232, 0.7);
+  color: #fff;
 }
 
 .cta.center p {
@@ -944,7 +1044,7 @@ a.chip:hover {
   display: block;
   font-size: 0.68rem;
   font-weight: 500;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink-2);
   margin-bottom: 8px;
@@ -955,19 +1055,18 @@ a.chip:hover {
 .field textarea {
   width: 100%;
   font-family: var(--body);
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 0.95rem;
+  font-weight: 400;
   color: var(--ink);
   background: var(--card);
   border: 1px solid var(--line-2);
-  border-radius: 14px;
+  border-radius: var(--radius);
   padding: 13px 16px;
 }
 
 .field textarea {
   min-height: 150px;
   resize: vertical;
-  border-radius: var(--radius);
 }
 
 .field input:focus,
@@ -992,9 +1091,8 @@ a.chip:hover {
 
 .form-note {
   font-size: 0.86rem;
-  font-weight: 300;
   color: var(--ink-2);
-  background: var(--blue-wash);
+  background: var(--sage-wash);
   padding: 16px 18px;
   border-radius: var(--radius);
 }
@@ -1022,7 +1120,7 @@ a.chip:hover {
 }
 
 .post-meta {
-  font-size: 0.68rem;
+  font-size: 0.66rem;
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -1032,21 +1130,21 @@ a.chip:hover {
 
 .post-item p {
   color: var(--ink-2);
-  font-size: 0.96rem;
-  font-weight: 400;
+  font-size: 0.93rem;
   margin: 0;
   max-width: 68ch;
 }
 
 /* ============================================================
-   Footer — on the ground, outside the card
+   Footer
    ============================================================ */
 
 .site-footer {
+  background: var(--card-2);
+  border-top: 1px solid var(--line);
   color: var(--ink-2);
-  padding-block: 52px 26px;
-  font-size: 0.88rem;
-  font-weight: 300;
+  padding-block: 56px 26px;
+  font-size: 0.86rem;
 }
 
 .footer-grid {
@@ -1098,7 +1196,7 @@ a.chip:hover {
 .footer-brand p {
   max-width: 34ch;
   color: var(--ink-3);
-  font-size: 0.86rem;
+  font-size: 0.85rem;
 }
 
 .footer-bottom {
@@ -1109,16 +1207,17 @@ a.chip:hover {
   flex-wrap: wrap;
   gap: 12px 24px;
   justify-content: space-between;
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   color: var(--ink-3);
 }
 
 .crisis {
-  background: var(--blush-wash);
-  border: 1px solid rgba(226, 194, 176, 0.5);
+  background: #fff;
+  border: 1px solid var(--line-2);
+  border-left: 3px solid var(--sage);
   padding: 15px 17px;
   border-radius: var(--radius);
-  font-size: 0.84rem;
+  font-size: 0.83rem;
   color: var(--ink-2);
   margin-top: 20px;
 }
@@ -1146,7 +1245,7 @@ a.chip:hover {
 }
 
 .frame {
-  border-radius: var(--radius);
+  border-radius: var(--radius-leaf);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
   background: var(--blue-wash);
@@ -1165,9 +1264,9 @@ a.chip:hover {
 }
 
 .stat {
-  background: rgba(255, 253, 249, 0.85);
-  border: 1px solid rgba(109, 132, 166, 0.4);
-  border-left: 3px solid var(--blue-mid);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--sage);
   border-radius: var(--radius);
   padding: 18px 20px;
 }
@@ -1175,15 +1274,14 @@ a.chip:hover {
 .stat b {
   display: block;
   font-family: var(--display);
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 500;
   color: var(--ink);
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 .stat span {
-  font-size: 0.82rem;
-  font-weight: 300;
+  font-size: 0.8rem;
   color: var(--ink-2);
 }
 
@@ -1195,11 +1293,4 @@ a.chip:hover {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-/* The card's bottom edge follows its last section */
-.page-card > main > :last-child {
-  border-bottom-left-radius: var(--radius-card);
-  border-bottom-right-radius: var(--radius-card);
-  overflow: hidden;
 }
