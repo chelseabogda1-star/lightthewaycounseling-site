@@ -8,11 +8,41 @@ import Logo from "./Logo";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const [stuck, setStuck] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
+
+  // Slide the bar away when scrolling down, bring it back on the way up.
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    let last = window.scrollY;
+    let frame = 0;
+
+    const onScroll = () => {
+      if (frame) return;
+      frame = window.requestAnimationFrame(() => {
+        frame = 0;
+        const y = window.scrollY;
+        setStuck(y > 8);
+        // Ignore tiny jitters, and never hide it near the top of the page.
+        if (Math.abs(y - last) > 6) {
+          setHidden(y > last && y > 220);
+          last = y;
+        }
+      });
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (frame) window.cancelAnimationFrame(frame);
+    };
+  }, []);
 
   return (
     <>
@@ -28,7 +58,12 @@ export default function Header() {
         </div>
       </div>
 
-      <header className="site-header" data-open={open ? "true" : "false"}>
+      <header
+        className="site-header"
+        data-open={open ? "true" : "false"}
+        data-hidden={hidden && !open ? "true" : "false"}
+        data-stuck={stuck ? "true" : "false"}
+      >
         <div className="wrap">
         <div className="header-bar">
           <Link href="/" className="brand" aria-label={`${site.shortName} home`}>

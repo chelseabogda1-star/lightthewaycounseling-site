@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Effects from "@/components/Effects";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -94,6 +95,7 @@ export default function RootLayout({
           </div>
           <Footer />
         </div>
+        <Effects />
       </body>
     </html>
   );

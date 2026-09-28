@@ -40,7 +40,8 @@ export default function Home() {
         </svg>
 
         <div className="wrap">
-          <div className="hero__figure">
+          <div className="tilt-stage">
+            <div className="hero__figure" data-tilt="10">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={site.heroImage}
@@ -55,10 +56,11 @@ export default function Home() {
                 You were never meant to do it{" "}
                 <span className="script">alone.</span>
               </h1>
+              </div>
             </div>
           </div>
 
-          <div className="hero__below">
+          <div className="hero__below" data-reveal data-reveal-delay="120">
             <p className="lede">
               Individual counseling for children, adolescents, and adults in
               downtown Batavia &mdash; and anywhere in Illinois by secure video.
@@ -80,7 +82,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="band-accent">
+      <section className="band-accent" data-reveal>
         <div className="wrap">
           <h2>Welcome to your space</h2>
           <p>
@@ -93,7 +95,7 @@ export default function Home() {
       {/* Welcome */}
       <section className="section">
         <div className="wrap">
-          <div className="split">
+          <div className="split" data-reveal>
             <div>
               <p className="eyebrow">Welcome</p>
               <hr className="rule" />
@@ -152,7 +154,7 @@ export default function Home() {
             and adults. Choose a concern to read how we approach it and which
             clinicians on our team treat it.
           </p>
-          <ul className="chips" style={{ marginTop: 28 }}>
+          <ul className="chips" style={{ marginTop: 28 }} data-reveal>
             {specialties.map((s) => (
               <li key={s.slug}>
                 <Link className="chip" href={`/services/${s.slug}`}>
@@ -167,7 +169,7 @@ export default function Home() {
       {/* Where we work */}
       <section className="section section--tight">
         <div className="wrap">
-          <div className="split" style={{ alignItems: "center" }}>
+          <div className="split" style={{ alignItems: "center" }} data-reveal>
             <div>
               <p className="eyebrow">Where we work</p>
               <hr className="rule" />
@@ -221,7 +223,7 @@ export default function Home() {
             each clinician before you reach out &mdash; or tell us what you&rsquo;re
             looking for and we&rsquo;ll help you choose.
           </p>
-          <div className="team-grid">
+          <div className="team-grid" data-reveal>
             {team.map((t) => (
               <Link key={t.slug} className="person" href={`/team/${t.slug}`}>
                 <div className="person__photo">
@@ -244,7 +246,7 @@ export default function Home() {
             <p className="eyebrow">From the blog</p>
             <hr className="rule" />
             <h2>Reading room</h2>
-            <div className="grid grid--3" style={{ marginTop: 30 }}>
+            <div className="grid grid--3" style={{ marginTop: 30 }} data-reveal>
               {posts.map((p) => (
                 <Link key={p.slug} className="card" href={`/blog/${p.slug}`}>
                   <p className="post-meta">

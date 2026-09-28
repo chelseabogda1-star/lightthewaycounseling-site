@@ -96,23 +96,24 @@ h2,
 h3,
 h4 {
   font-family: var(--display);
-  font-weight: 400;
+  font-weight: 600;
   color: var(--ink);
-  line-height: 1.2;
+  line-height: 1.16;
   letter-spacing: 0;
   margin: 0 0 0.5em;
   text-wrap: balance;
 }
 
 h1 {
-  font-size: clamp(2.1rem, 5vw, 3.35rem);
+  font-size: clamp(2.5rem, 6vw, 4.1rem);
+  line-height: 1.08;
 }
 h2 {
-  font-size: clamp(1.6rem, 3.4vw, 2.35rem);
+  font-size: clamp(2rem, 4.4vw, 3.1rem);
+  line-height: 1.12;
 }
 h3 {
-  font-size: clamp(1.15rem, 2vw, 1.38rem);
-  font-weight: 500;
+  font-size: clamp(1.25rem, 2.2vw, 1.55rem);
 }
 
 .script {
@@ -206,10 +207,10 @@ p {
 }
 
 .lede {
-  font-size: clamp(1rem, 1.6vw, 1.1rem);
+  font-size: clamp(1.05rem, 1.7vw, 1.2rem);
   font-weight: 400;
   color: var(--ink-2);
-  line-height: 1.8;
+  line-height: 1.75;
 }
 
 .rule {
@@ -339,6 +340,18 @@ p {
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: saturate(150%) blur(10px);
   border-bottom: 1px solid var(--line);
+  transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.site-header[data-stuck="true"] {
+  box-shadow: 0 1px 0 rgba(74, 68, 58, 0.04),
+    0 10px 30px rgba(74, 68, 58, 0.07);
+}
+
+.site-header[data-hidden="true"] {
+  transform: translateY(calc(-100% - 12px));
 }
 
 .header-bar {
@@ -606,8 +619,8 @@ p {
 .hero__chip b {
   display: block;
   font-family: var(--display);
-  font-weight: 500;
-  font-size: 0.98rem;
+  font-weight: 600;
+  font-size: 1.02rem;
   color: var(--ink);
 }
 
@@ -817,8 +830,8 @@ a.chip:hover {
 
 .person__name {
   font-family: var(--display);
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.28rem;
+  font-weight: 600;
   margin: 0 0 3px;
 }
 
@@ -912,14 +925,14 @@ a.chip:hover {
 }
 
 .prose h2 {
-  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+  font-size: clamp(1.6rem, 3vw, 2.15rem);
   color: var(--ink);
   margin-top: 1.9em;
   margin-bottom: 0.5em;
 }
 
 .prose h3 {
-  font-size: 1.15rem;
+  font-size: 1.32rem;
   color: var(--ink);
   margin-top: 1.7em;
   margin-bottom: 0.4em;
@@ -1272,8 +1285,8 @@ a.chip:hover {
 .stat b {
   display: block;
   font-family: var(--display);
-  font-size: 1.35rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: var(--ink);
   line-height: 1.25;
 }
@@ -1290,5 +1303,60 @@ a.chip:hover {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================
+   Effects — reveal on scroll, cursor tilt.
+   Everything here is gated on the .fx class, which Effects.tsx
+   only adds when the visitor hasn't asked for reduced motion.
+   Without JS (or with reduced motion) the page renders static.
+   ============================================================ */
+
+.fx [data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.75s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.fx [data-reveal][data-shown="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+.fx [data-tilt] {
+  transform: translate3d(var(--tx, 0), var(--ty, 0), 0)
+    rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transform-style: preserve-3d;
+}
+
+.tilt-stage {
+  perspective: 1100px;
+}
+
+/* A photo behind a band, dimmed by the band's own colour. */
+.cta__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.22;
+}
+
+.cta {
+  isolation: isolate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fx [data-reveal],
+  .fx [data-tilt] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 }

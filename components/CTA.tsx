@@ -13,10 +13,12 @@ export default function CTA({
   return (
     <section className={center ? "cta center" : "cta"}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img className="cta__bg" src={site.heroImage} alt="" aria-hidden="true" loading="lazy" />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img className="cta__mark" src="/mark.png" alt="" aria-hidden="true" />
       <div className="wrap">
         <hr className="rule" />
-        <h2>{heading}</h2>
+        <h2 data-reveal>{heading}</h2>
         <p style={center ? { marginInline: "auto" } : undefined}>{body}</p>
         <div className="btn-row">
           <Link className="btn btn--primary" href="/contact">
