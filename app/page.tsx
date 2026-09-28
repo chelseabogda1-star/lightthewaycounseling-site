@@ -28,7 +28,7 @@ export default function Home() {
           <path
             d="M0 210 C 300 50 560 270 1200 90"
             fill="none"
-            stroke="#c9cfc2"
+            stroke="#b9c8dc"
             strokeWidth="1.5"
           />
           <path
@@ -80,7 +80,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="band-sage">
+      <section className="band-accent">
         <div className="wrap">
           <h2>Welcome to your space</h2>
           <p>
