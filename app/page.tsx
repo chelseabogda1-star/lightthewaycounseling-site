@@ -41,6 +41,12 @@ export default function Home() {
 
         <div className="wrap">
           <div className="hero__figure">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={site.heroImage}
+              alt="A lit lantern on a quiet table"
+              fetchPriority="high"
+            />
             <p className="hero__eyebrow">
               Batavia, Illinois &middot; In person &amp; telehealth
             </p>
