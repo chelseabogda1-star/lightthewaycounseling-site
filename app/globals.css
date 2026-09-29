@@ -1409,3 +1409,40 @@ a.chip:hover::after {
   font-size: 0.86rem;
   color: var(--ink-2);
 }
+
+/* Ways to reach the office, with what each one is good for. */
+.ways {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+
+.ways li {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.ways b {
+  display: block;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+
+.ways span {
+  display: block;
+  font-size: 0.89rem;
+  color: var(--ink-2);
+  line-height: 1.7;
+}
+
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}

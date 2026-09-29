@@ -31,7 +31,38 @@ export default function Contact() {
         <div className="wrap">
           <div className="split" style={{ alignItems: "start" }}>
             <div>
-              <p className="eyebrow">Request an appointment</p>
+              <p className="eyebrow">Three ways to reach us</p>
+              <hr className="rule" />
+              <ul className="ways">
+                <li>
+                  <b>The form below</b>
+                  <span>
+                    Fastest way to get scheduled. It reaches the whole admin team,
+                    so it does not sit in one person&rsquo;s inbox.
+                  </span>
+                </li>
+                <li>
+                  <b>
+                    Email{" "}
+                    <a href={`mailto:${site.email}`} style={{ wordBreak: "break-word" }}>
+                      {site.email}
+                    </a>
+                  </b>
+                  <span>Just as quick as the form if you would rather write to us directly.</span>
+                </li>
+                <li>
+                  <b>
+                    Call <a href={`tel:${site.phoneHref}`}>{site.phone}</a>
+                  </b>
+                  <span>
+                    Always an option, and good for questions. Scheduling by phone
+                    usually takes longer, because it often means voicemail and a
+                    call back rather than a straight answer.
+                  </span>
+                </li>
+              </ul>
+
+              <p className="eyebrow" style={{ marginTop: 34 }}>Request an appointment</p>
               <hr className="rule" />
               <ContactForm />
             </div>

@@ -18,6 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/rates", priority: 0.7 },
     { url: "/blog", priority: 0.7 },
     { url: "/contact", priority: 0.8 },
+    { url: "/privacy", priority: 0.3 },
+    { url: "/terms", priority: 0.3 },
   ].map((p) => ({
     url: `${site.url}${p.url}`,
     lastModified: now,

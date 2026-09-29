@@ -19,32 +19,6 @@ export type Therapist = {
 // each path to e.g. "/team/chelsea-bogda.jpg" when you have them.
 export const team: Therapist[] = [
   {
-    slug: "caitlin-reisel",
-    name: "Caitlin Reisel",
-    credentials: "LCPC",
-    role: "Co-Owner",
-    photo:
-      "https://static.wixstatic.com/media/7807b1_fdbda2a88f664ae58f2b9d26fabc8434~mv2.jpg/v1/crop/x_213,y_359,w_1638,h_1966/fill/w_600,h_720,al_c,q_90,enc_auto/IMG_4350_edited_edited.jpg",
-    phone: "(630) 415-7325",
-    email: "caitlin@lightthewaycounselingpllc.com",
-    ages: "Older children, adolescents, and adults",
-    specialties: [
-      "Anxiety",
-      "Depression",
-      "ADHD",
-      "Relationship difficulties",
-      "Life transitions",
-      "LGBTQ+",
-      "New parenthood & infertility",
-    ],
-    approaches: ["Client-Centered Therapy", "CBT", "DBT"],
-    bio: [
-      "Hi! My name is Caitlin and I am a counselor who works with older children, adolescents, and adults navigating a variety of struggles. My therapeutic approach is simple: I believe in walking alongside my clients during the therapy process, problem-solving and processing together.",
-      "I enjoy working with individuals struggling with anxiety, depression, ADHD, relationship difficulties, life transitions, LGBTQ+ difficulties, and more. As a new mom, I also have a newfound passion for working with new parents as they navigate the transition into parenthood, including infertility struggles. I am trained in Client-Centered Therapy, which involves listening without judgement, providing empathy, and being one's genuine self with clients. I pair this approach with Cognitive Behavioral (CBT), Dialectical Behavior (DBT), and other therapeutic approaches in order to provide a client with tools they can take with them outside of our sessions.",
-      "As Carl Rogers, the founder of Client-Centered Therapy said, “The good life is a process, not a state of being. It is a direction, not a destination.” If you're ready to start that process, I'd love to join you on your journey.",
-    ],
-  },
-  {
     slug: "heather-anderson",
     name: "Heather Anderson",
     credentials: "LCPC, ADHD-CCSP, ASDCS",
@@ -129,6 +103,32 @@ export const team: Therapist[] = [
       "As a Master of Social Work intern, I am passionate about helping individuals feel supported, understood, and empowered through their healing journey.",
       "My professional experience includes work as a behaviorist in education, where I collaborated with children and multidisciplinary teams while building expertise in crisis intervention, trauma-informed care, and de-escalation techniques.",
       "I believe therapy is most effective when clients feel safe, accepted, and heard. My goal is to create a collaborative, compassionate space where clients can explore challenges, build on their strengths, and develop practical tools for lasting growth.",
+    ],
+  },
+  {
+    slug: "caitlin-reisel",
+    name: "Caitlin Reisel",
+    credentials: "LCPC",
+    role: "Co-Owner",
+    photo:
+      "https://static.wixstatic.com/media/7807b1_fdbda2a88f664ae58f2b9d26fabc8434~mv2.jpg/v1/crop/x_213,y_359,w_1638,h_1966/fill/w_600,h_720,al_c,q_90,enc_auto/IMG_4350_edited_edited.jpg",
+    phone: "(630) 415-7325",
+    email: "caitlin@lightthewaycounselingpllc.com",
+    ages: "Older children, adolescents, and adults",
+    specialties: [
+      "Anxiety",
+      "Depression",
+      "ADHD",
+      "Relationship difficulties",
+      "Life transitions",
+      "LGBTQ+",
+      "New parenthood & infertility",
+    ],
+    approaches: ["Client-Centered Therapy", "CBT", "DBT"],
+    bio: [
+      "Hi! My name is Caitlin and I am a counselor who works with older children, adolescents, and adults navigating a variety of struggles. My therapeutic approach is simple: I believe in walking alongside my clients during the therapy process, problem-solving and processing together.",
+      "I enjoy working with individuals struggling with anxiety, depression, ADHD, relationship difficulties, life transitions, LGBTQ+ difficulties, and more. As a new mom, I also have a newfound passion for working with new parents as they navigate the transition into parenthood, including infertility struggles. I am trained in Client-Centered Therapy, which involves listening without judgement, providing empathy, and being one's genuine self with clients. I pair this approach with Cognitive Behavioral (CBT), Dialectical Behavior (DBT), and other therapeutic approaches in order to provide a client with tools they can take with them outside of our sessions.",
+      "As Carl Rogers, the founder of Client-Centered Therapy said, “The good life is a process, not a state of being. It is a direction, not a destination.” If you're ready to start that process, I'd love to join you on your journey.",
     ],
   },
   {

@@ -105,7 +105,9 @@ export default function Footer() {
           <span>
             &copy; {year} Light The Way Counseling, PLLC. All rights reserved.
           </span>
-          <span>
+          <span className="footer-legal">
+            <Link href="/privacy">Privacy</Link>
+            <Link href="/terms">Terms &amp; Disclaimers</Link>
             <Link href="/contact">Request an appointment</Link>
           </span>
         </div>
