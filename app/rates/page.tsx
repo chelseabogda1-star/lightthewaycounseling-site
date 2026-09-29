@@ -30,13 +30,31 @@ export default function Rates() {
         <div className="wrap wrap-narrow prose">
           <h2>Session fees</h2>
           <p>
-            Fees vary by clinician, license level, and service type. Because rates
-            change, we quote them directly rather than posting numbers that may be out
-            of date. Call{" "}
+            These are our self-pay rates. Sessions run about 50 to 55 minutes.
+          </p>
+          <ul className="factlist" style={{ marginBottom: 24 }}>
+            <li>
+              <span className="k">Initial assessment</span>
+              $160
+            </li>
+            <li>
+              <span className="k">
+                Follow-up session, individual, family or couples
+              </span>
+              $110
+            </li>
+            <li>
+              <span className="k">Session with a master&rsquo;s level intern</span>
+              $40
+            </li>
+          </ul>
+          <p>
+            If you are using insurance, what you pay depends on your plan, and you
+            pay your copay at each session. Fees may be adjusted at the start of a
+            calendar year, and we give notice before that happens. Call{" "}
             <a href={`tel:${site.phoneHref}`}>{site.phone}</a> or email{" "}
-            <a href={`mailto:${site.email}`}>{site.email}</a> and we&rsquo;ll give you
-            the current fee for the clinician you&rsquo;re interested in before you
-            schedule anything.
+            <a href={`mailto:${site.email}`}>{site.email}</a> if you want to confirm
+            anything before you schedule.
           </p>
 
           <h2>Insurance</h2>
@@ -51,6 +69,13 @@ export default function Rates() {
             outpatient mental health benefits. We can provide a superbill, an
             itemized receipt you submit to your insurer for reimbursement.
           </p>
+          <p>
+            As a courtesy we will bill your insurance company, HMO, or other
+            responsible party on your behalf. If you have not met your deductible,
+            the full fee is due at each session until it is satisfied. If your plan
+            denies payment or does not cover counseling, the balance is due at that
+            time.
+          </p>
           <p>Questions worth asking your insurer before your first session:</p>
           <ul>
             <li>Do I have outpatient mental health benefits?</li>
@@ -64,15 +89,26 @@ export default function Rates() {
           <h2>Payment</h2>
           <p>
             We accept major credit and debit cards, HSA and FSA cards. Payment or copay
-            is collected at the time of service.
+            is collected at the time of service. If an account becomes overdue and is
+            turned over to collections, the client or responsible party is
+            responsible for any collection fees.
           </p>
 
           <h2>Cancellations</h2>
           <p>
-            Your appointment time is held for you. We ask for at least 24 hours&rsquo;
-            notice to cancel or reschedule; late cancellations and missed appointments
-            may be charged the full session fee, which insurance does not cover. Life
-            happens. Talk to your clinician if something comes up.
+            Your appointment time is held for you. We ask for at least{" "}
+            <strong>24 business hours&rsquo; notice</strong> to cancel or reschedule.
+            Without that notice there is a late cancellation fee of{" "}
+            <strong>$75</strong>, or <strong>$20</strong> for a session with an
+            intern. Insurance does not cover it.
+          </p>
+          <p>
+            For virtual appointments, if you have not joined, your clinician will try
+            to reach you after ten minutes. If there is still no response fifteen
+            minutes after the start time, the late cancellation fee may apply.
+          </p>
+          <p>
+            Life happens. Talk to your clinician if something comes up.
           </p>
 
           <h2>Good Faith Estimate</h2>

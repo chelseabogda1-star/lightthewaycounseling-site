@@ -85,7 +85,7 @@ export default function OnlineTherapy() {
           <p>
             Here, you are matched with one of{" "}
             <Link href="/team">{team.length} clinicians</Link> and you stay with
-            them. Sessions are a full hour of real clinical time. If we aren&rsquo;t
+            them. Sessions run about 50 to 55 minutes. If we aren&rsquo;t
             the right fit, we say so and try to point you somewhere better rather
             than keeping you on a roster.
           </p>

@@ -21,10 +21,11 @@ export const site = {
   heroImage:
     "https://static.wixstatic.com/media/7807b1_296004a17f4a43e3a9ec07b685bdba7c~mv2.jpg/v1/fill/w_1800,h_1013,al_c,q_85,enc_auto/7807b1_296004a17f4a43e3a9ec07b685bdba7c~mv2.jpg",
   social: {
-    facebook: "https://www.facebook.com/",
-    instagram: "https://www.instagram.com/",
-    tiktok: "https://www.tiktok.com/",
-    youtube: "https://www.youtube.com/",
+    facebook:
+      "https://www.facebook.com/p/Light-the-Way-Counseling-100087639811602/",
+    instagram: "https://www.instagram.com/lightthewaycounseling/",
+    tiktok: "https://www.tiktok.com/@light.the.way.pllc",
+    youtube: "https://www.youtube.com/@LightTheWayCounseling",
   },
   mapQuery:
     "30+S+Shumway+Avenue+1W+Batavia+IL+60510",

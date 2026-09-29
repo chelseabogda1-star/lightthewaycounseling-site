@@ -21,6 +21,21 @@ export default function Footer() {
               Individual counseling for children, adolescents, and adults in Batavia,
               Illinois. In person and by telehealth across Illinois.
             </p>
+            <ul className="social">
+              {[
+                ["Facebook", site.social.facebook],
+                ["Instagram", site.social.instagram],
+                ["TikTok", site.social.tiktok],
+                ["YouTube", site.social.youtube],
+              ].map(([label, href]) => (
+                <li key={label}>
+                  <a href={href} target="_blank" rel="noopener noreferrer">
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
             <div className="crisis">
               <strong>In crisis?</strong> Call or text <strong>988</strong> for the
               Suicide &amp; Crisis Lifeline, or call 911. This website is not monitored

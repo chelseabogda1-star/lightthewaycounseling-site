@@ -21,8 +21,8 @@ export default function Contact() {
           <h1>Get in touch</h1>
           <p className="lede">
             Reaching out is often the hardest part. Tell us a little about what
-            you&rsquo;re looking for and we&rsquo;ll take it from there,
-            usually within one business day.
+            you&rsquo;re looking for and we&rsquo;ll take it from there. We return
+            messages Monday through Friday.
           </p>
         </div>
       </section>
@@ -59,12 +59,22 @@ export default function Contact() {
                     Call <a href={`tel:${site.phoneHref}`}>{site.phone}</a>
                   </b>
                   <span>
-                    Always an option, and good for questions. Scheduling by phone
-                    usually takes longer, because it often means voicemail and a
-                    call back rather than a straight answer.
+                    Always an option, and the right one for anything clinical.
+                    Scheduling by phone usually takes longer, because it often means
+                    voicemail and a call back rather than a straight answer.
                   </span>
                 </li>
               </ul>
+
+              <div className="notice" style={{ marginTop: 22 }}>
+                <strong>Keep written messages to scheduling.</strong> Email and text
+                are not confidential and are not HIPAA compliant, so a sentence or
+                two about what you are looking for is plenty. Anything clinical is
+                better on the phone or in session. We cannot guarantee 24-hour
+                crisis coverage; if you need help now, call or text{" "}
+                <strong>988</strong>, call 911, or go to your nearest emergency
+                room.
+              </div>
 
               <p className="eyebrow" style={{ marginTop: 34 }}>Request an appointment</p>
               <hr className="rule" />

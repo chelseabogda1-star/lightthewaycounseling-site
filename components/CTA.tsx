@@ -3,7 +3,7 @@ import { site } from "@/lib/site";
 
 export default function CTA({
   heading = "Ready when you are.",
-  body = "Reaching out is often the hardest part. The contact form or an email to our admin address are the quickest ways to get scheduled, usually within one business day. You are welcome to call as well, though booking by phone tends to take longer.",
+  body = "Reaching out is often the hardest part. The contact form or an email to our admin address are the quickest ways to get scheduled. We return messages Monday through Friday, and a message left over the weekend may wait until Monday. You are welcome to call as well, though booking by phone tends to take longer.",
   center = false,
 }: {
   heading?: string;

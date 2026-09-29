@@ -1446,3 +1446,26 @@ a.chip:hover::after {
   flex-wrap: wrap;
   gap: 8px 20px;
 }
+
+/* Where to find the practice elsewhere. */
+.social {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  font-size: 0.82rem;
+}
+
+.social a {
+  color: var(--ink-2);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-2);
+  padding-bottom: 2px;
+}
+
+.social a:hover {
+  color: var(--blue-deep);
+  border-bottom-color: var(--blue);
+}

@@ -51,6 +51,12 @@ const jsonLd = {
     { "@type": "City", name: "North Aurora" },
     { "@type": "State", name: "Illinois" },
   ],
+  sameAs: [
+    site.social.facebook,
+    site.social.instagram,
+    site.social.tiktok,
+    site.social.youtube,
+  ],
   medicalSpecialty: "Psychiatric",
   availableService: [
     "Individual counseling",
