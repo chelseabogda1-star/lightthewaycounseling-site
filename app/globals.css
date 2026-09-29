@@ -1452,10 +1452,31 @@ a.chip:hover::after {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background-image: url("/flame-bg.jpg");
   background-size: cover;
-  background-position: center 42%;
+  background-position: center 46%;
   background-repeat: no-repeat;
+  /* The photograph is dark. This is what keeps the page cream. */
+  opacity: 0.22;
+}
+
+/* A warm veil over the photo, so it reads in the site's colours
+   rather than as a grey picture showing through. */
+.flame-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      180deg,
+      rgba(251, 250, 244, 0.30) 0%,
+      rgba(251, 250, 244, 0) 40%,
+      rgba(251, 250, 244, 0.34) 100%
+    ),
+    radial-gradient(
+      58% 52% at 50% 46%,
+      rgba(226, 160, 76, 0.40) 0%,
+      rgba(226, 160, 76, 0) 72%
+    );
+  mix-blend-mode: screen;
 }
 
 /* Surfaces let it through. */
