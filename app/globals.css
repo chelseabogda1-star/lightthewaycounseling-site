@@ -70,7 +70,7 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--ground);
+  background-color: #2f353f;
   color: var(--ink);
   font-family: var(--body);
   font-size: 16px;
@@ -1454,7 +1454,9 @@ a.chip:hover::after {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background-size: cover;
+  /* contain, not cover: the whole photograph stays in frame at every
+     window shape, rather than being cropped into a zoomed detail. */
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
 }
