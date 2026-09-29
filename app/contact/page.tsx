@@ -37,8 +37,9 @@ export default function Contact() {
                 <li>
                   <b>The form below</b>
                   <span>
-                    Fastest way to get scheduled. It reaches the whole admin team,
-                    so it does not sit in one person&rsquo;s inbox.
+                    Quickest way to get scheduled. It writes the email for you, so
+                    you do not have to work out what to include, then opens your own
+                    email program with it ready to send.
                   </span>
                 </li>
                 <li>
@@ -48,7 +49,10 @@ export default function Contact() {
                       {site.email}
                     </a>
                   </b>
-                  <span>Just as quick as the form if you would rather write to us directly.</span>
+                  <span>
+                    The same inbox the form writes to. Go straight here if you would
+                    rather write it yourself.
+                  </span>
                 </li>
                 <li>
                   <b>
