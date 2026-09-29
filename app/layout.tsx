@@ -88,11 +88,6 @@ export default function RootLayout({
         <a className="skip-link" href="#main">
           Skip to content
         </a>
-        <div
-          className="flame-bg"
-          aria-hidden="true"
-          style={{ backgroundImage: `url(${site.heroImage})` }}
-        />
         <div className="shell">
           <div className="page-card">
             <Header />

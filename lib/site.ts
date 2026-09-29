@@ -19,7 +19,7 @@ export const site = {
   // TODO: replace with a local file in /public once Chelsea supplies the original.
   // Currently hotlinked from the Wix CDN, same as the clinician headshots.
   heroImage:
-    "https://static.wixstatic.com/media/7807b1_296004a17f4a43e3a9ec07b685bdba7c~mv2.jpg/v1/fill/w_2560,h_1440,al_c,q_88,enc_auto/7807b1_296004a17f4a43e3a9ec07b685bdba7c~mv2.jpg",
+    "https://static.wixstatic.com/media/7807b1_296004a17f4a43e3a9ec07b685bdba7c~mv2.jpg/v1/fill/w_1800,h_1013,al_c,q_85,enc_auto/7807b1_296004a17f4a43e3a9ec07b685bdba7c~mv2.jpg",
   social: {
     facebook: "https://www.facebook.com/",
     instagram: "https://www.instagram.com/",
