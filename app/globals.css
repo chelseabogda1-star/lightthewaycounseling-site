@@ -16,7 +16,7 @@
 
   /* Ink: warm brown-olive, never black */
   --ink: #4a443a;
-  --ink-2: #6b6458;
+  --ink-2: #565042;
   --ink-3: #8d8578;
 
   /* Brand: sampled from the logo */
@@ -71,20 +71,6 @@ html {
 body {
   margin: 0;
   background-color: var(--ground);
-  background-image:
-    radial-gradient(
-      68% 44% at 50% -4%,
-      rgba(var(--ember-hot), 0.20) 0%,
-      rgba(var(--ember), 0.09) 42%,
-      rgba(var(--ember), 0) 72%
-    ),
-    radial-gradient(
-      52% 34% at 88% 42%,
-      rgba(var(--ember), 0.07) 0%,
-      rgba(var(--ember), 0) 70%
-    );
-  background-attachment: fixed, fixed;
-  background-repeat: no-repeat, no-repeat;
   color: var(--ink);
   font-family: var(--body);
   font-size: 16px;
@@ -1452,4 +1438,41 @@ a.chip:hover::after {
   background: var(--card);
   font-size: 0.86rem;
   color: var(--ink-2);
+}
+
+
+/* ============================================================
+   The flame, behind the whole site.
+   One fixed layer under everything; the page surfaces above it
+   are translucent, so it reads through every section.
+   ============================================================ */
+
+.flame-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("/flame-bg.jpg");
+  background-size: cover;
+  background-position: center 42%;
+  background-repeat: no-repeat;
+}
+
+/* Surfaces let it through. */
+.section--cream { background: rgba(246, 243, 234, 0.72); }
+.section--mist  { background: rgba(228, 235, 244, 0.68); }
+.page-head      { background: rgba(228, 235, 244, 0.62); }
+.card           { background: rgba(255, 255, 255, 0.82); }
+.stat,
+.hero__chip     { background: rgba(255, 255, 255, 0.78); }
+.site-footer    { background: rgba(246, 243, 234, 0.82); }
+.site-header    { background: rgba(255, 255, 255, 0.88); }
+
+/* The two solid bands stay solid: they are the page's punctuation. */
+.band-accent { background: var(--blue-band); }
+.cta         { background: var(--dark); }
+
+@media (max-width: 760px) {
+  /* A flame the size of a phone screen sits right behind the words. */
+  .flame-bg { background-size: 190% auto; background-position: center 34%; }
 }
