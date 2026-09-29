@@ -233,6 +233,9 @@ export default function Home() {
                 <p className="person__name">{t.name}</p>
                 <p className="person__creds">{t.credentials}</p>
                 {t.role && <span className="person__role">{t.role}</span>}
+                {t.acceptingNew === false && (
+                  <span className="person__closed">{t.note}</span>
+                )}
               </Link>
             ))}
           </div>

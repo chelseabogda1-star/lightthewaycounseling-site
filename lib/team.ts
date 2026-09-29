@@ -19,24 +19,6 @@ export type Therapist = {
 // each path to e.g. "/team/chelsea-bogda.jpg" when you have them.
 export const team: Therapist[] = [
   {
-    slug: "chelsea-bogda",
-    name: "Chelsea Bogda",
-    credentials: "LCPC, ADHD-CCSP",
-    role: "Co-Owner",
-    photo:
-      "https://static.wixstatic.com/media/7807b1_e60f25e9363a4f5d90f8ebccb8975d9b~mv2.png/v1/crop/x_0,y_0,w_1064,h_1277/fill/w_600,h_720,al_c,q_90,enc_auto/HeadShot_edited.png",
-    phone: "(630) 549-5575",
-    email: "chelsea@lightthewaycounselingpllc.com",
-    ages: "Adults",
-    specialties: ["ADHD", "Anxiety", "Life transitions"],
-    approaches: ["CBT", "DBT", "Client-centered", "Mindfulness-based", "Creative & music interventions"],
-    bio: [
-      "While therapy can seem frightening or uncomfortable, sometimes we need someone to help navigate through life's difficulties. When working with a therapist that aligns with our needs, it can often improve the therapeutic experience.",
-      "As a Licensed Clinical Professional Counselor, I aim to provide a safe, nonjudgmental, and empathic environment and am passionate about working with adults struggling with ADHD, anxiety, and life transitions. I utilize strategies from approaches such as CBT and DBT, tailoring my strategies and interventions to the presenting individual. I often incorporate a combination of music and other creative interventions with modalities, including client-centered and mindfulness-based interventions.",
-      "Overall, I value the importance of an individualized approach, adjusting the therapeutic experience to meet the needs and interests of the client.",
-    ],
-  },
-  {
     slug: "caitlin-reisel",
     name: "Caitlin Reisel",
     credentials: "LCPC",
@@ -148,6 +130,26 @@ export const team: Therapist[] = [
       "My professional experience includes work as a behaviorist in education, where I collaborated with children and multidisciplinary teams while building expertise in crisis intervention, trauma-informed care, and de-escalation techniques.",
       "I believe therapy is most effective when clients feel safe, accepted, and heard. My goal is to create a collaborative, compassionate space where clients can explore challenges, build on their strengths, and develop practical tools for lasting growth.",
     ],
+  },
+  {
+    slug: "chelsea-bogda",
+    name: "Chelsea Bogda",
+    credentials: "LCPC, ADHD-CCSP",
+    role: "Co-Owner",
+    photo:
+      "https://static.wixstatic.com/media/7807b1_e60f25e9363a4f5d90f8ebccb8975d9b~mv2.png/v1/crop/x_0,y_0,w_1064,h_1277/fill/w_600,h_720,al_c,q_90,enc_auto/HeadShot_edited.png",
+    phone: "(630) 549-5575",
+    email: "chelsea@lightthewaycounselingpllc.com",
+    ages: "Adults",
+    specialties: ["ADHD", "Anxiety", "Life transitions"],
+    approaches: ["CBT", "DBT", "Client-centered", "Mindfulness-based", "Creative & music interventions"],
+    bio: [
+      "While therapy can seem frightening or uncomfortable, sometimes we need someone to help navigate through life's difficulties. When working with a therapist that aligns with our needs, it can often improve the therapeutic experience.",
+      "As a Licensed Clinical Professional Counselor, I aim to provide a safe, nonjudgmental, and empathic environment and am passionate about working with adults struggling with ADHD, anxiety, and life transitions. I utilize strategies from approaches such as CBT and DBT, tailoring my strategies and interventions to the presenting individual. I often incorporate a combination of music and other creative interventions with modalities, including client-centered and mindfulness-based interventions.",
+      "Overall, I value the importance of an individualized approach, adjusting the therapeutic experience to meet the needs and interests of the client.",
+    ],
+    acceptingNew: false,
+    note: "Currently not accepting new clients.",
   },
 ];
 

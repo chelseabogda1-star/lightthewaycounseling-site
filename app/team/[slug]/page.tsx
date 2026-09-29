@@ -56,6 +56,9 @@ export default async function TherapistPage({ params }: Params) {
             {t.credentials}
             {t.role ? ` · ${t.role}` : ""}
           </p>
+          {t.acceptingNew === false && (
+            <p className="closed-note">{t.note}</p>
+          )}
         </div>
       </section>
 

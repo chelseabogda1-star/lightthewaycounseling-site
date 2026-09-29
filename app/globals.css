@@ -32,6 +32,10 @@
   --dark: #3f5273;
   --dark-2: #33425c;
 
+  /* The lantern, as light rather than as a picture. */
+  --ember: 214, 152, 74;
+  --ember-hot: 255, 206, 140;
+
   --line: #ece7dc;
   --line-2: #ddd6c7;
 
@@ -66,7 +70,21 @@ html {
 
 body {
   margin: 0;
-  background: var(--ground);
+  background-color: var(--ground);
+  background-image:
+    radial-gradient(
+      68% 44% at 50% -4%,
+      rgba(var(--ember-hot), 0.20) 0%,
+      rgba(var(--ember), 0.09) 42%,
+      rgba(var(--ember), 0) 72%
+    ),
+    radial-gradient(
+      52% 34% at 88% 42%,
+      rgba(var(--ember), 0.07) 0%,
+      rgba(var(--ember), 0) 70%
+    );
+  background-attachment: fixed, fixed;
+  background-repeat: no-repeat, no-repeat;
   color: var(--ink);
   font-family: var(--body);
   font-size: 16px;
@@ -477,13 +495,19 @@ p {
   pointer-events: none;
   background:
     radial-gradient(
-      52% 60% at 14% 22%,
-      rgba(136, 154, 181, 0.30) 0%,
+      46% 52% at 50% 34%,
+      rgba(var(--ember-hot), 0.34) 0%,
+      rgba(var(--ember), 0.15) 46%,
+      rgba(var(--ember), 0) 74%
+    ),
+    radial-gradient(
+      52% 60% at 12% 20%,
+      rgba(136, 154, 181, 0.26) 0%,
       rgba(136, 154, 181, 0) 70%
     ),
     radial-gradient(
-      50% 56% at 88% 76%,
-      rgba(109, 132, 166, 0.30) 0%,
+      50% 56% at 90% 78%,
+      rgba(109, 132, 166, 0.26) 0%,
       rgba(109, 132, 166, 0) 70%
     );
 }
@@ -648,6 +672,11 @@ p {
   inset: -40% -20% -30% 30%;
   z-index: -1;
   background:
+    radial-gradient(
+      40% 44% at 22% 26%,
+      rgba(var(--ember), 0.13) 0%,
+      rgba(var(--ember), 0) 72%
+    ),
     radial-gradient(
       44% 48% at 66% 38%,
       rgba(136, 154, 181, 0.34) 0%,
@@ -1372,7 +1401,22 @@ a.chip:hover::after {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.22;
+  opacity: 0.30;
+}
+
+/* The flame's light spilling across the closing band. */
+.cta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    54% 66% at 72% 44%,
+    rgba(var(--ember-hot), 0.26) 0%,
+    rgba(var(--ember), 0.12) 44%,
+    rgba(var(--ember), 0) 76%
+  );
 }
 
 .cta {
@@ -1386,4 +1430,26 @@ a.chip:hover::after {
     transform: none !important;
     transition: none !important;
   }
+}
+
+/* A clinician who is not taking new referrals right now. */
+.person__closed {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.74rem;
+  line-height: 1.5;
+  color: var(--ink-3);
+  font-style: italic;
+}
+
+.closed-note {
+  display: inline-block;
+  margin: 4px 0 0;
+  padding: 7px 14px;
+  border: 1px solid var(--line-2);
+  border-left: 3px solid var(--blue);
+  border-radius: var(--radius);
+  background: var(--card);
+  font-size: 0.86rem;
+  color: var(--ink-2);
 }
